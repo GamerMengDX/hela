@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+
+# Vite's cache directory (kept inside the project so no temp write escapes it).
+.vite-cache/
+
+# Build intermediates of the source-built ONNX Runtime bundle.
+vendor/ort-webgl-1.30.0/.build/
+vendor/ort-webgl-1.30.0/.build-*/

@@ -1,0 +1,105 @@
+module.exports={
+  "name": "Mahjong-YOLO YOLO11s FP16",
+  "source": "https://github.com/nikmomo/Mahjong-YOLO",
+  "sourceModel": "models/small/mahjong-yolos-best.onnx",
+  "license": "AGPL-3.0 (model metadata)",
+  "sha256": "8317f1963f2e6be23063ddd643f1320302a284b9f9a421285ec018776d468f0f",
+  "bytes": 19025914,
+  "inputName": "images",
+  "outputName": "output0",
+  "inputSize": 640,
+  "shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "parts": [
+    {
+      "name": "vision-part-01",
+      "path": "vision-part-01/weights.bin",
+      "bytes": 1400000,
+      "sha256": "2bc635eea519f85a00171b28e7f3dcbc2e560333049f25b08d414f465e607766"
+    },
+    {
+      "name": "vision-part-02",
+      "path": "vision-part-02/weights.bin",
+      "bytes": 1400000,
+      "sha256": "c75971386ea38dedbaa4368b413895aef4f0fdfaf2eafc6dd86edb8b8b8c6050"
+    },
+    {
+      "name": "vision-part-03",
+      "path": "vision-part-03/weights.bin",
+      "bytes": 1400000,
+      "sha256": "96f51cc3df793cf9d03af5754459f44bb0a8cff9b4064d4983b380fc86bac774"
+    },
+    {
+      "name": "vision-part-04",
+      "path": "vision-part-04/weights.bin",
+      "bytes": 1400000,
+      "sha256": "68f0ba7f2fde4541d1f79fd4ef09d871f4ad2242c72f6067dd6d93fb009f5949"
+    },
+    {
+      "name": "vision-part-05",
+      "path": "vision-part-05/weights.bin",
+      "bytes": 1400000,
+      "sha256": "7f4bd9074ad5129a3d4c5239ab9a3e0092fd758374d87e64f88ef91d19c72da8"
+    },
+    {
+      "name": "vision-part-06",
+      "path": "vision-part-06/weights.bin",
+      "bytes": 1400000,
+      "sha256": "804d7ba69d743953ff4297d408c3cd0aea39699ee917c51c4efd5c09d38e2c22"
+    },
+    {
+      "name": "vision-part-07",
+      "path": "vision-part-07/weights.bin",
+      "bytes": 1400000,
+      "sha256": "4c73a3ca0f2975de8880041f8bdf68afc5712bdc0731b84818a9927171d5fae6"
+    },
+    {
+      "name": "vision-part-08",
+      "path": "vision-part-08/weights.bin",
+      "bytes": 1400000,
+      "sha256": "7f80dbc2cb30fd6d58b6e1b0d9171dbe6577ea7a08fed4c0aefd2e42b99cab74"
+    },
+    {
+      "name": "vision-part-09",
+      "path": "vision-part-09/weights.bin",
+      "bytes": 1400000,
+      "sha256": "f6376bde9b81ad46793fa112545d422a71aa7a5cea6c20f8e5d31789662c93a1"
+    },
+    {
+      "name": "vision-part-10",
+      "path": "vision-part-10/weights.bin",
+      "bytes": 1400000,
+      "sha256": "3a8dc05ae5592882a116a54e0bdf6b9401778e663878a4488fa165ec6a34e744"
+    },
+    {
+      "name": "vision-part-11",
+      "path": "vision-part-11/weights.bin",
+      "bytes": 1400000,
+      "sha256": "20644489513956a4d5e58941dc79f7b5c32c768ab0d353061fc350300c26e1fc"
+    },
+    {
+      "name": "vision-part-12",
+      "path": "vision-part-12/weights.bin",
+      "bytes": 1400000,
+      "sha256": "6e54d65acddf2d58678225e8fe38cc12adb442f954006ebb781649576cbbd237"
+    },
+    {
+      "name": "vision-part-13",
+      "path": "vision-part-13/weights.bin",
+      "bytes": 1400000,
+      "sha256": "23d0605b1d5349231d439f14c609cddfabc6d8d221f1afb10d14444f311f521d"
+    },
+    {
+      "name": "vision-part-14",
+      "path": "vision-part-14/weights.bin",
+      "bytes": 825914,
+      "sha256": "57da11f4262920e43c6e523151f3daf13ecf5acbe4019e94ab12a7bb557af955"
+    }
+  ],
+  "sourceCommit": "28ffceed232ad95fd019c47a6c51ae7c78791a0e",
+  "originalSha256": "ac3747c42dfe41682fc0436909574032fdd90717bcd14d42b2d41181b12124eb"
+};

@@ -1,0 +1,55 @@
+{
+  "name": "hela-heybox-miniprogram",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "description": "和啦 · 小黑盒小程序端（与 src/ 共享算点、教学与三语核心）",
+  "license": "AGPL-3.0-only",
+  "heybox": {
+    "miniProgramId": "",
+    "name": "和啦",
+    "category": "tool",
+    "icon": "assets/hela-icon-mochi.png",
+    "coverImages": [
+      "assets/cover-home.webp"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "permissions": {
+      "storage": {
+        "enabled": true
+      },
+      "clipboard": {
+        "enabled": true
+      }
+    }
+  },
+  "scripts": {
+    "hb-sdk": "hb-sdk",
+    "dev": "hb-sdk dev --no-open",
+    "build": "npm run prepare && hb-sdk build && node scripts/verify-dist.mjs",
+    "prepare": "npm run prepare:i18n && npm run prepare:teaching && npm run prepare:vision",
+    "prepare:i18n": "node scripts/sync-i18n.mjs",
+    "prepare:i18n:write": "node scripts/sync-i18n.mjs --write",
+    "prepare:teaching": "node scripts/sync-teaching.mjs",
+    "prepare:vision": "node scripts/verify-vision.mjs",
+    "vision:rebuild": "node scripts/build-vision.mjs",
+    "vision:majsoul": "node scripts/sync-online-vision.mjs",
+    "vendor:verify": "node scripts/build-ort-vendor.mjs --verify",
+    "vendor:build": "node scripts/build-ort-vendor.mjs"
+  },
+  "dependencies": {
+    "@heybox/hb-sdk": "0.9.1",
+    "fflate": "0.8.3",
+    "onnxruntime-web": "1.30.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "vite": "^8.0.12"
+  },
+  "overrides": {
+    "sharp": "0.35.5"
+  }
+}

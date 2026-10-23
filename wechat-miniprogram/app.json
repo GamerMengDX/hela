@@ -1,0 +1,155 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/calculator/index",
+    "pages/guide/index",
+    "pages/history/index",
+    "pages/coming-soon/index",
+    "pages/recognize/index",
+    "pages/practice/index",
+    "pages/lobby/index",
+    "pages/teaching/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "和啦",
+    "navigationBarBackgroundColor": "#263e4b",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#263e4b",
+    "backgroundTextStyle": "light"
+  },
+  "usingComponents": {
+    "mahjong-tile": "/components/mahjong-tile/index",
+    "app-header": "/components/app-header/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "subPackages": [
+    {
+      "root": "vision-part-01",
+      "name": "vision-part-01",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-02",
+      "name": "vision-part-02",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-03",
+      "name": "vision-part-03",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-04",
+      "name": "vision-part-04",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-05",
+      "name": "vision-part-05",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-06",
+      "name": "vision-part-06",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-07",
+      "name": "vision-part-07",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-08",
+      "name": "vision-part-08",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-09",
+      "name": "vision-part-09",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-10",
+      "name": "vision-part-10",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-11",
+      "name": "vision-part-11",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-12",
+      "name": "vision-part-12",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-13",
+      "name": "vision-part-13",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-part-14",
+      "name": "vision-part-14",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-aux-01",
+      "name": "vision-aux-01",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-aux-02",
+      "name": "vision-aux-02",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-aux-03",
+      "name": "vision-aux-03",
+      "pages": [
+        "model/index"
+      ]
+    },
+    {
+      "root": "vision-aux-04",
+      "name": "vision-aux-04",
+      "pages": [
+        "model/index"
+      ]
+    }
+  ]
+}

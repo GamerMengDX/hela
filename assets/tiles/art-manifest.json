@@ -1,0 +1,279 @@
+{
+  "version": 2,
+  "generator": "scripts/generate-tile-art.mjs",
+  "artworkSource": {
+    "note": "牌面矢量图来自上游 mahjong_graphic（固定提交），按上游 M+ 字型授權條款使用，不按 AGPL/MIT 授权。",
+    "repository": "https://github.com/lietxia/mahjong_graphic",
+    "commit": "3e275804ff58325306710bef3a7406860444bc6a",
+    "directory": "Vectors 矢量图/SVG",
+    "provenance": "assets/tiles/art-provenance.json",
+    "licenseNotice": "LICENSES/MAHJONG-GRAPHIC-NOTICE.md",
+    "licenseText": "LICENSES/MAHJONG-GRAPHIC-M-PLUS-LICENSE.txt"
+  },
+  "codeLicense": "AGPL-3.0-only",
+  "artworkLicense": "M+ FONT LICENSE (M+ 字型授權條款)",
+  "faces": {
+    "svgDirectory": "assets/tiles",
+    "viewBox": "0 0 19 26",
+    "scale": 7,
+    "pngWidth": 133,
+    "pngHeight": 182,
+    "pngOptions": {
+      "palette": true,
+      "quality": 85,
+      "effort": 10,
+      "compressionLevel": 9,
+      "dither": 1
+    }
+  },
+  "tiles": {
+    "m0": {
+      "svgSha256": "a45240807fa8c4a7a51a293c6cea6cbcf2c265fd77645d847fbbc87a191851df",
+      "upstreamGitBlobSha": "a9b1e8b83fb05447d1e72358144d354b363df8db",
+      "pngSha256": "9370084f10843ca1b65bff414f8d4ec1a504cb882f093ebe9c5f3514a6550e27",
+      "pngBytes": 4401
+    },
+    "m1": {
+      "svgSha256": "04ee208e946dd6137da95ce243aa8bb6250be839362be068d712ee442e937d55",
+      "upstreamGitBlobSha": "af08ff0f1faa1fcf878a11df56726464ecab2c01",
+      "pngSha256": "0ed9ac50dc71a21f1b4b47225cf1838b9ddac6e19eff5267adb506cf919730fd",
+      "pngBytes": 3315
+    },
+    "m2": {
+      "svgSha256": "0973b47d6d9b1d8a574a0ab4d8df6ba8e9c14203f30c6510dd21753ca7aef89a",
+      "upstreamGitBlobSha": "949f57b2431dca641c4fe019806bc5cf8a636c5a",
+      "pngSha256": "7991ae84680c00e389cbff07f94fcfc4a3961e9ab623df0f2db3962afb2b0a63",
+      "pngBytes": 3784
+    },
+    "m3": {
+      "svgSha256": "94e883c76622352f4b66b012ba0ffa8a6315bffa9660dc39429fd15a7f9edb53",
+      "upstreamGitBlobSha": "f65c717bbda7be3d6c8f91f067925b06cca12b29",
+      "pngSha256": "f180f9fcfae5b8412285e0b7878ac486e6547c1f47e7d1a476481f2eb305bc69",
+      "pngBytes": 4307
+    },
+    "m4": {
+      "svgSha256": "1e96f36c69e0c7672adee3ff307d57a288948113080ef67544c73b8a6ec603ee",
+      "upstreamGitBlobSha": "a746efb4c69b5bc96d2b861e36bdb7e3b29be3d5",
+      "pngSha256": "e6ae3a4acf78058aac3f5f93582c2d869b8008252cb1b38cd86dae64aa84be60",
+      "pngBytes": 4177
+    },
+    "m5": {
+      "svgSha256": "f688c44af85c1c95f0e51eca5c11d6a09af8b302466d5eed20f54f01c54246e4",
+      "upstreamGitBlobSha": "3060a3bca77e7ae3f881ef64a03fc562f99f3960",
+      "pngSha256": "a48fa585e24d5489e264b7be37e2465ccccbcc3c4f6ffffcd0c46e12be9f821d",
+      "pngBytes": 4711
+    },
+    "m6": {
+      "svgSha256": "6fc8ccdb13e1c7db8b5c49d3f2f8cd7e924d7920feabd0aee2e15bf8d64b8401",
+      "upstreamGitBlobSha": "51afaf364207ba06a8b0ef974ebd46460ae2fa6e",
+      "pngSha256": "9fd5998c80bf1accb718a730e9f6ba6972f73763d16a90d12640d89cbb613d55",
+      "pngBytes": 4163
+    },
+    "m7": {
+      "svgSha256": "eb95dddbe36ad9dfdc5be659a9fe0a608d527d73eb82e4d823c0c548b4af79a7",
+      "upstreamGitBlobSha": "bd81c7cf5f02d4080dc80ad1dad836f95f55fd61",
+      "pngSha256": "dab2c2b8b88e5a0fb7aab10da34e6f17ed22043281b3e32306ee145d834f68fb",
+      "pngBytes": 4073
+    },
+    "m8": {
+      "svgSha256": "f08ce2c21e70292e5d116222f9cf377824acbc19e54c912fd8d94715a5eb2607",
+      "upstreamGitBlobSha": "61519f0eb60671116f1696022c5f9fc890b58f91",
+      "pngSha256": "1225d34a87152600b775f8018d167ea906d42964f178d9405ea453a82ab7d5fb",
+      "pngBytes": 3741
+    },
+    "m9": {
+      "svgSha256": "2c8b7538f38865e99c139e5679e7b5e7f2025992fa34595189407296c944231d",
+      "upstreamGitBlobSha": "1d97c50569f8c53626e79513510dbb7d0460f09c",
+      "pngSha256": "9d1c1b4c8c5acaa258f7d2e34381f417e7b85647693b28ed4ed0b6d00d0db2b0",
+      "pngBytes": 4212
+    },
+    "p0": {
+      "svgSha256": "0f495bfe70df94121531177ec5b5cdb8b361388b599520f2918734018ed67350",
+      "upstreamGitBlobSha": "c6100883227f838d843bbe6c3e659afdd4fdc4f3",
+      "pngSha256": "4b3382e745518beb392231e8a165e965dbbb0c66a76fa9a9c350a39a46e44079",
+      "pngBytes": 5293
+    },
+    "p1": {
+      "svgSha256": "bcea271f4955e9e48768a8683bfeb14d11d090936e7ea0ef1a0f08eb64c27489",
+      "upstreamGitBlobSha": "66820efa5fec46f0ad8b013a80dc485398b3ec9f",
+      "pngSha256": "6456221b99f0707ba7b3cc2c7556cf8cba1acf23e9a825a2b8d338bcd829db39",
+      "pngBytes": 6324
+    },
+    "p2": {
+      "svgSha256": "1b7f70012402cc189eca85203cec8cf9d90cf562b43cad151e0ae8e3316be080",
+      "upstreamGitBlobSha": "051464906042afffe73029ade0b55c5ecb12418e",
+      "pngSha256": "1fe20f63445e7a13d86ef9e99cbc1e69e02ba6c5ba60ca2ee5afdecfe61c40fd",
+      "pngBytes": 4112
+    },
+    "p3": {
+      "svgSha256": "f2482321bab154a1d1ab95ec70fce42043958146fb8eb3cac0f5e4cf3182cb0c",
+      "upstreamGitBlobSha": "0e5ef429ba6346d3f20243fdd6ecd981d7455dc5",
+      "pngSha256": "a88abde4810c650c8f91d32d16facfd2626a549abe1c87f9e8d754f23a744d35",
+      "pngBytes": 4575
+    },
+    "p4": {
+      "svgSha256": "95c82b31f076650feece4287755ebea5e64ba5f672f3b138ee7d5457fbd4f4d5",
+      "upstreamGitBlobSha": "f810f545edf14abdaa57582f27e21e8cc161bae2",
+      "pngSha256": "7e230c2e3ba97dc1ea84413a3ac7a7a6a1250ac0fe9e303c2c191fe0c9205dc2",
+      "pngBytes": 4328
+    },
+    "p5": {
+      "svgSha256": "282788cb63245d7ac60846fa9c48415f172d5df8cbcab6a03d4b3714752173ff",
+      "upstreamGitBlobSha": "3a07d6f588d36f2973f91494d7de61a6a21d00a5",
+      "pngSha256": "02bcbca0a109b85c502cf1848204adb9b9e8f81fdf4e9c062ce6d8ef13ea8bb7",
+      "pngBytes": 5798
+    },
+    "p6": {
+      "svgSha256": "f7fc7144c1e1220861372ea07fd43afc08afa21962c13c324732d6c02435f785",
+      "upstreamGitBlobSha": "b980b024383e4cafcbb318e6580b562d1934cff0",
+      "pngSha256": "7112c822476d917c1d305a6f7d4ff134a765449f87f1754f7379ec60b4a7aaea",
+      "pngBytes": 6097
+    },
+    "p7": {
+      "svgSha256": "e34b003d6808c37c42d727f67dac9f00640496b98f3340bb226e1290249ff780",
+      "upstreamGitBlobSha": "b4ae0508ef35bd29de53876c892f3aac073b1ca7",
+      "pngSha256": "98368ed4705e3cd3fcd006e7309ccc09c5a108c211cce3813cf587a424a28cbf",
+      "pngBytes": 7108
+    },
+    "p8": {
+      "svgSha256": "dc24c32d68e6350f651807d82789c74e82a9b999a7b91ea3af56b8e5c4205fc1",
+      "upstreamGitBlobSha": "30bcba338b85145916785561034e2b143722ee26",
+      "pngSha256": "ef1815e1d5f0b09e9cad71f59b231cf7fde58249ff6d004e39acef6b64a34eec",
+      "pngBytes": 6688
+    },
+    "p9": {
+      "svgSha256": "a3f4efc20cee3689ac6b4a1c407000baf31606e4569255d377d75352832bb955",
+      "upstreamGitBlobSha": "45a4ad5a2dcc39b64a28d43d8e7662ae8bb6a158",
+      "pngSha256": "55d032636385867411cb8f0268f7a1a7afd65019b611ce3fd849360eef35b55c",
+      "pngBytes": 7791
+    },
+    "s0": {
+      "svgSha256": "5a58d5eae6bb02d3496ec81d321d3cedba0abc24228935df4e4086bae64f1195",
+      "upstreamGitBlobSha": "7dd599df9a8a395bf5711ab353fe71aee4435744",
+      "pngSha256": "a02a6bf053aec00a3427b4b29e61879321051efaf1094ca7d9aacf803ed09a94",
+      "pngBytes": 3836
+    },
+    "s1": {
+      "svgSha256": "1b7dd03b4a17cfd879ffdbf9b3d52f0ead561c5e0a0af91e8365acecedb93c2a",
+      "upstreamGitBlobSha": "a46bf73940c0ff973a60c4bd2ce3db8a4a0ff9cb",
+      "pngSha256": "125194143076456146e412c3de11210f6221451cf3526890b3591cee4194c299",
+      "pngBytes": 9033
+    },
+    "s2": {
+      "svgSha256": "1157667926fe6cb678ccb44be652d2edb8b6af066217c8c3cd39129b3964f8e4",
+      "upstreamGitBlobSha": "6e83081e6b184d8d5d0b4fb6e9f8432140dafbdf",
+      "pngSha256": "2189000fa0630ba74e081603e8d7b95f31d9f4e781ab5f57f413a5ad21805cd0",
+      "pngBytes": 1712
+    },
+    "s3": {
+      "svgSha256": "8b2792d6b94649cd13f2e1a136b9d92bf3bc205556f9c74a90b53ffcdc4dcf71",
+      "upstreamGitBlobSha": "f8bcb0036ff38d4215406d2d0222ad2e48b2f40f",
+      "pngSha256": "4c3c47e2d78847c652e6c6965d0dbd58821c4a1fd72d0655b53436dcdeed15c3",
+      "pngBytes": 2281
+    },
+    "s4": {
+      "svgSha256": "b0373a0dfd396aebedfa66e47b5fd46aea493776e00c2f8d2c49f709617d1ad3",
+      "upstreamGitBlobSha": "ad84e4a8ebbf9c049b5dc061fcf7e0f7d2357696",
+      "pngSha256": "44eebdad1bf8f60ea2b8881371c3a353f8ecbfc2ad277e273f5b952166ea2866",
+      "pngBytes": 2969
+    },
+    "s5": {
+      "svgSha256": "f46dfd96d3b2cde3acf52df632a4287da1faa585bc7c234b7125a6dec0081422",
+      "upstreamGitBlobSha": "406b556b472068b2a99451e8e9e7007206256372",
+      "pngSha256": "fcd5fc3019fbeeea24f0259bfc0f0cde10be0edf0d428529ee9ab63318e3a8fe",
+      "pngBytes": 3904
+    },
+    "s6": {
+      "svgSha256": "1d05a8f8fb70e2d9e733524a3745c189ad3eef6f7b74c968020eebda984d291a",
+      "upstreamGitBlobSha": "2c5f4345d8ba71a7bfd60c9ef8bb8dc19857899d",
+      "pngSha256": "c7e3285faad58018832d9a6d75b203738098767c3cdb4a21244a1138e546d367",
+      "pngBytes": 4174
+    },
+    "s7": {
+      "svgSha256": "a1e9544e2433ecfafc9c726209a02ee1fcfdd3869d2e87c3cbc0d565b5e759c4",
+      "upstreamGitBlobSha": "6ed923fae23a91bf77422047197ef2b3f6008211",
+      "pngSha256": "01b72fb43a3a78e1acb400a0099627ae0b83c15c80c05b40e7644072648e0189",
+      "pngBytes": 3862
+    },
+    "s8": {
+      "svgSha256": "4f5ff3adead90fad72b0d22917396a5a73c9f8a9926021ffa26aee7d06a62b43",
+      "upstreamGitBlobSha": "31fc4d506a0a781714b44e246aaaa1d5c68742be",
+      "pngSha256": "df93abc02d7555543f7662845f44755752335b16495b53cf5a4a373196d901de",
+      "pngBytes": 4485
+    },
+    "s9": {
+      "svgSha256": "b9d9815cf0b389c3c3af0b0bc2541fdfed3d1fccc662860460fcf6aec68abc78",
+      "upstreamGitBlobSha": "4e3478940a1d8ed82c7a2ddab497c84c1350ef12",
+      "pngSha256": "d38ec9ee92042d4b24a582b120f5e43aa07b007f9e6c509aaa0b5a131cd6d50d",
+      "pngBytes": 4554
+    },
+    "z1": {
+      "svgSha256": "9bc044758111744cf390aada9446f6ffbd9474aa125b8e72ceaf36887ab70909",
+      "upstreamGitBlobSha": "f7fb2006b456006a72f630334e42e79991cdf3ea",
+      "pngSha256": "e069f4afeff8119d247fe3e4cc4e1c12227a06f7b09bd3d3541d408fb71cc2e2",
+      "pngBytes": 3098
+    },
+    "z2": {
+      "svgSha256": "37acdfeab7c441af875704396df5203e710f731ed5fb49b3e5f470e6bc0a4d89",
+      "upstreamGitBlobSha": "70b991e1817a26fcc1b9d940d032619506b89bc6",
+      "pngSha256": "06647a9ec456c90c7bec5c1b7c1f1e58ac052d3a0c09f4cf069b2d6ef4bd6dc8",
+      "pngBytes": 3086
+    },
+    "z3": {
+      "svgSha256": "0e5a270ce36a0651272f03668aa42c6b3bdac5e1afebd4ef4cec7de5889585f6",
+      "upstreamGitBlobSha": "1038973962b0f5068afa05276ac5cc0daa6974b1",
+      "pngSha256": "9409e781bdf94397dbb81fff3c858417d8038674a168ede1f457814d2d0143a2",
+      "pngBytes": 2604
+    },
+    "z4": {
+      "svgSha256": "24fb79efeda970317c159298aa7b8ccf11ea6b9a6524dc73bef3d2357bd7acf8",
+      "upstreamGitBlobSha": "5fa206f1a172de6b1d4638bc9ce2bf2904e9a6d1",
+      "pngSha256": "14084d631cb94fca0fc985ef9f897ee900bf47fb06dd0f70117fb4e7c750b94b",
+      "pngBytes": 2384
+    },
+    "z5": {
+      "svgSha256": "561cfd59c3f116faa0d1faabdd1418fc7dc0bfee2ec5b328392a03c0065ca59f",
+      "upstreamGitBlobSha": "e2a34ee9e52909c322be918735b2ff3ae20ba9c7",
+      "pngSha256": "bbd72b1d7471fa7579e692367b8f9bdebef103085a3ecc55d6ab9e42bfb9e5e3",
+      "pngBytes": 415
+    },
+    "z6": {
+      "svgSha256": "d2cc48fe1cea52385c3b462cf84ac62b02b12f01be04b2ce2db91c683ebf9955",
+      "upstreamGitBlobSha": "97db55d7668d6024585c28d185fd03db190e3d59",
+      "pngSha256": "801b34ff4f0eb9720da62da15c4efb6c339f528357998c7b9977ce9cdc716f8b",
+      "pngBytes": 3486
+    },
+    "z7": {
+      "svgSha256": "753b8596f4a7be56d4ef10005e710d98393e00c8cddc4bb38020b16a4e61bd6f",
+      "upstreamGitBlobSha": "5ac12f4a2f8fc6f82f04d74f7b8cc93de844ca06",
+      "pngSha256": "914bc135fc5d2cae20d03a9901f5f70563ddadfee364e266de16ae63aa128ebf",
+      "pngBytes": 1886
+    }
+  },
+  "examples": {
+    "hand-demo.png": {
+      "sha256": "8351bc8a77d0f4ecc8c6ccca7f7493a85068421304de7010b4ecb0393605465b",
+      "bytes": 16343,
+      "tiles": [
+        "m2",
+        "m3",
+        "m4",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "tilePixels": [
+        76,
+        104
+      ]
+    }
+  }
+}

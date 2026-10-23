@@ -1,0 +1,5 @@
+<view class="app-shell theme-{{themeId}} locale-{{locale}}">
+<app-header caption="和啦" />
+<view class="page planned-page" wx:if="{{module}}"><text class="eyebrow">HELA · {{module.number}}</text><view class="coming-symbol">＋</view><view class="title">{{module.name}}</view><text class="badge">{{copy.coming_soon}}</text><view class="coming-description">{{copy.this_section_is_being_planned}}<view>{{copy.new_content_will_appear_here_when_it_is}}</view></view><button class="primary full" bindtap="onHome">{{copy.return_home}}</button><view class="local-note">{{copy.try_the_calculator_to_figure_out_your_next}}</view></view>
+
+</view>

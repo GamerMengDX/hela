@@ -1,0 +1,1569 @@
+{
+  "schemaVersion": 2,
+  "candidate": "a",
+  "splitPolicy": {
+    "maxNodes": 20,
+    "maxOutputBytes": 33554432
+  },
+  "generatorSha256": "b11e3ba90a05533377c412200712ce6866d17975b188354f8ea1549abd77140f",
+  "segmenterSha256": "e7a90d7c86cb9e5f6fcd0fb62752fcba30b64aca72a908e663f450fa7b0aca4f",
+  "models": {
+    "main": {
+      "source": "https://github.com/nikmomo/Mahjong-YOLO",
+      "sourceCommit": "28ffceed232ad95fd019c47a6c51ae7c78791a0e",
+      "sourceSha256": "8317f1963f2e6be23063ddd643f1320302a284b9f9a421285ec018776d468f0f",
+      "splitPolicy": {
+        "maxNodes": 20,
+        "maxOutputBytes": 33554432
+      },
+      "wholeGraphSha256": "4bc7e1b9ea81c224a88979b00df7daf68c7516c63203e055d6c60980d8e4fe92",
+      "inputName": "images",
+      "outputName": "/model.23/Concat_5_cast_to_output0",
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "inputSize": 640,
+      "license": "AGPL-3.0",
+      "segments": [
+        {
+          "index": 0,
+          "inputs": [
+            "images"
+          ],
+          "outputs": [
+            "/model.0/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.0/conv/Conv_output_0"
+          ],
+          "nodes": 1,
+          "bytes": 3996,
+          "gzipBytes": 2672,
+          "parts": 1,
+          "resources": [
+            "main-s000-000.js"
+          ],
+          "sha256": "3607147008c798463500a4e2a5dc22f018691e7d79b7577832223f0d32b6bd11",
+          "gzipSha256": "6bb054a618ba5e89476ea82d9265434f2f7b714a0411212ac282518e5e762808",
+          "activationOutputBytes": 13107200,
+          "boundaryBytes": 13107200
+        },
+        {
+          "index": 1,
+          "inputs": [
+            "/model.0/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.1/conv/Conv_output_0"
+          ],
+          "nodes": 3,
+          "bytes": 74644,
+          "gzipBytes": 46320,
+          "parts": 1,
+          "resources": [
+            "main-s001-000.js"
+          ],
+          "sha256": "7ecec1c8ed8f723bc0297579160712f84c5a93ccad1c2ba774975d35341aa25f",
+          "gzipSha256": "f76cb2b183bc98be04e2c7adb52fa2855d38fece9a63f49faf33de186af11022",
+          "activationOutputBytes": 32768000,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 2,
+          "inputs": [
+            "/model.1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.2/cv1/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.2/cv1/act/Mul_output_0"
+          ],
+          "nodes": 5,
+          "bytes": 17559,
+          "gzipBytes": 11061,
+          "parts": 1,
+          "resources": [
+            "main-s002-000.js"
+          ],
+          "sha256": "914fb6265bf32938e868fc1f585683c8911adade316712d3f1db0100ae42a675",
+          "gzipSha256": "b572c5d2aa78551346c1649d773d2a0fad416476670d3eaff6ff63824d8379e7",
+          "activationOutputBytes": 32768000,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 3,
+          "inputs": [
+            "/model.2/cv1/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.2/Split_output_0",
+            "/model.2/Split_output_1"
+          ],
+          "keep": [
+            "/model.2/Split_output_0",
+            "/model.2/Split_output_1"
+          ],
+          "nodes": 1,
+          "bytes": 354,
+          "gzipBytes": 188,
+          "parts": 1,
+          "resources": [
+            "main-s003-000.js"
+          ],
+          "sha256": "e46aa2c8296be5f1c92f0e4a97cc5267313f851f830ed04602c5cd31aeef6300",
+          "gzipSha256": "d0525b16cba3ec4479ef9690166a0f17a21c3b7b0094876e4a6b85d88c5332a7",
+          "activationOutputBytes": 6553600,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 4,
+          "inputs": [
+            "/model.2/Split_output_1",
+            "/model.2/Split_output_0"
+          ],
+          "outputs": [
+            "/model.2/Concat_output_0"
+          ],
+          "keep": [
+            "/model.2/Concat_output_0"
+          ],
+          "nodes": 8,
+          "bytes": 38724,
+          "gzipBytes": 23914,
+          "parts": 1,
+          "resources": [
+            "main-s004-000.js"
+          ],
+          "sha256": "b3b4ef37991a5f47d6861168f8da8e445f11b3d8e0e42cc42564aac51ad253c1",
+          "gzipSha256": "fcf7148b01ed6dbf5066e083f57180485b868443b57c0e674ab43ebb4db728e0",
+          "activationOutputBytes": 27852800,
+          "boundaryBytes": 9830400
+        },
+        {
+          "index": 5,
+          "inputs": [
+            "/model.2/Concat_output_0"
+          ],
+          "outputs": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "nodes": 1,
+          "bytes": 50146,
+          "gzipBytes": 31187,
+          "parts": 1,
+          "resources": [
+            "main-s005-000.js"
+          ],
+          "sha256": "ea119ddb3c95a6be0cd4c481d7131830283e6299382ba4b3429a9af34791089f",
+          "gzipSha256": "4bfe12c59a9480c12a1e20414f03e5417eb850fcab89d1f98d68b71f41080588",
+          "activationOutputBytes": 13107200,
+          "boundaryBytes": 13107200
+        },
+        {
+          "index": 6,
+          "inputs": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.3/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.3/conv/Conv_output_0"
+          ],
+          "nodes": 3,
+          "bytes": 591035,
+          "gzipBytes": 352539,
+          "parts": 1,
+          "resources": [
+            "main-s006-000.js"
+          ],
+          "sha256": "04c16fa879032d13e8471bbf769bfa883e3610369359185a4b95cf444cf0362d",
+          "gzipSha256": "56e8c243f9b62ba7cc6a1fadfbb3690eea71305703688ccecfe81035efa621ff",
+          "activationOutputBytes": 29491200,
+          "boundaryBytes": 3276800
+        },
+        {
+          "index": 7,
+          "inputs": [
+            "/model.3/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.4/Split_output_0",
+            "/model.4/Split_output_1"
+          ],
+          "keep": [
+            "/model.4/Split_output_0",
+            "/model.4/Split_output_1"
+          ],
+          "nodes": 6,
+          "bytes": 67148,
+          "gzipBytes": 41177,
+          "parts": 1,
+          "resources": [
+            "main-s007-000.js"
+          ],
+          "sha256": "27c2ceeff97711c9535c506f41527f171024f7d2fb50c72e66f189a1584e547f",
+          "gzipSha256": "45befcf12275bb753c0f2f76f5a6ed953c67807e47eeee26e8949b7828cccb9e",
+          "activationOutputBytes": 19660800,
+          "boundaryBytes": 3276800
+        },
+        {
+          "index": 8,
+          "inputs": [
+            "/model.4/Split_output_1",
+            "/model.4/Split_output_0"
+          ],
+          "outputs": [
+            "/model.4/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 347457,
+          "gzipBytes": 207612,
+          "parts": 1,
+          "resources": [
+            "main-s008-000.js"
+          ],
+          "sha256": "e27a3f5b85f5e2a1f3b2034554d5636c17dff061c5d3a64f47d552ba9d93ff4f",
+          "gzipSha256": "94d2153ca270fa82ef89acd53736d6e596b7cf348089612056e19fc90096f70f",
+          "activationOutputBytes": 20480000,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 9,
+          "inputs": [
+            "/model.4/cv2/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "nodes": 2,
+          "bytes": 404,
+          "gzipBytes": 183,
+          "parts": 1,
+          "resources": [
+            "main-s009-000.js"
+          ],
+          "sha256": "b73cdc2f072cb044fcbf947f070e8ef28d64131bca77b01fda3c1faa1d1a9a63",
+          "gzipSha256": "18d21669be0c35c5cfb0e575d2b1adf9dcc4cf1cfa6502e9ad455bd119a45bd3",
+          "activationOutputBytes": 13107200,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 10,
+          "inputs": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "nodes": 7,
+          "bytes": 2624892,
+          "gzipBytes": 1554459,
+          "parts": 4,
+          "resources": [
+            "main-s010-000.js",
+            "main-s010-001.js",
+            "main-s010-002.js",
+            "main-s010-003.js"
+          ],
+          "sha256": "edb99cf069d0c1dec98d1b8d8838a3b3b5f69f8e9cf7c1c6156fb119ff52f5df",
+          "gzipSha256": "9b964c62a70d8086eed0e3d8e61b1f22f60615e7cdd4b3118bee953ed2929b06",
+          "activationOutputBytes": 11468800,
+          "boundaryBytes": 8192000
+        },
+        {
+          "index": 11,
+          "inputs": [
+            "/model.6/Split_output_1"
+          ],
+          "outputs": [
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/m.0/m/m.1/Add_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1",
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/m.0/m/m.1/Add_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 661309,
+          "gzipBytes": 391912,
+          "parts": 1,
+          "resources": [
+            "main-s011-000.js"
+          ],
+          "sha256": "1a080ae332a13fcfa37843961631000c286f6e4ea43d7c00740fd86b7657fa5f",
+          "gzipSha256": "e6d8155f473742247f6886f2b81d00abe85ce5b27b273598da037a095655ec5b",
+          "activationOutputBytes": 8192000,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 12,
+          "inputs": [
+            "/model.6/m.0/m/m.1/Add_output_0",
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "outputs": [
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 8,
+          "bytes": 462069,
+          "gzipBytes": 274973,
+          "parts": 1,
+          "resources": [
+            "main-s012-000.js"
+          ],
+          "sha256": "dd0097bf3be44611451f8e1e4aa109b84d8d3203c1768445be6c42b1368f47a4",
+          "gzipSha256": "24257e613ccb481785b62cc2c5eb37a6a924c44db0bebbb001568dc1c0f57ccf",
+          "activationOutputBytes": 10649600,
+          "boundaryBytes": 8192000
+        },
+        {
+          "index": 13,
+          "inputs": [
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "nodes": 7,
+          "bytes": 5772668,
+          "gzipBytes": 3404635,
+          "parts": 9,
+          "resources": [
+            "main-s013-000.js",
+            "main-s013-001.js",
+            "main-s013-002.js",
+            "main-s013-003.js",
+            "main-s013-004.js",
+            "main-s013-005.js",
+            "main-s013-006.js",
+            "main-s013-007.js",
+            "main-s013-008.js"
+          ],
+          "sha256": "8bce390561ea086202a55590845723f367ca5a3b578bf195e02cec124e6828a9",
+          "gzipSha256": "e66521fe55a0b4167d3d3831f9d32f8cd977212beeef45d91a9381d9cd01e5a8",
+          "activationOutputBytes": 5734400,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 14,
+          "inputs": [
+            "/model.8/Split_output_1"
+          ],
+          "outputs": [
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/m.0/m/m.1/Add_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1",
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/m.0/m/m.1/Add_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 2628944,
+          "gzipBytes": 1554914,
+          "parts": 4,
+          "resources": [
+            "main-s014-000.js",
+            "main-s014-001.js",
+            "main-s014-002.js",
+            "main-s014-003.js"
+          ],
+          "sha256": "a944fcf886b7aedd00ff46aa4289f2f0f5920d04072afd9977e0fdfed67cdf97",
+          "gzipSha256": "3e06f2457e680c0030dfc00601d07b942091156df652fa44e41b976c9d7f5600",
+          "activationOutputBytes": 4096000,
+          "boundaryBytes": 9420800
+        },
+        {
+          "index": 15,
+          "inputs": [
+            "/model.8/m.0/m/m.1/Add_output_0",
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "outputs": [
+            "/model.10/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv1/conv/Conv_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 5517191,
+          "gzipBytes": 3256988,
+          "parts": 9,
+          "resources": [
+            "main-s015-000.js",
+            "main-s015-001.js",
+            "main-s015-002.js",
+            "main-s015-003.js",
+            "main-s015-004.js",
+            "main-s015-005.js",
+            "main-s015-006.js",
+            "main-s015-007.js",
+            "main-s015-008.js"
+          ],
+          "sha256": "e48f7b218ad4ef98da797eba35be198f07b4430918a2f802b01333d9ae7b082c",
+          "gzipSha256": "ac48e23ffccdc4c3b6af198ae8c151fbacb5862a87912f1ec1b935d12f966eef",
+          "activationOutputBytes": 12697600,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 16,
+          "inputs": [
+            "/model.10/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.10/Split_output_0",
+            "/model.10/m/m.0/Add_output_0"
+          ],
+          "keep": [
+            "/model.10/Split_output_0",
+            "/model.10/m/m.0/Add_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 18,
+          "bytes": 803608,
+          "gzipBytes": 477846,
+          "parts": 2,
+          "resources": [
+            "main-s016-000.js",
+            "main-s016-001.js"
+          ],
+          "sha256": "81d353967118813b007ce63b97f349c86b5187a6efb80f2470e479464c428ec8",
+          "gzipSha256": "033d7af4b0e538c8ec208cb48de8384db8613ec3a968d540ff38324356aec460",
+          "activationOutputBytes": 18227200,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 17,
+          "inputs": [
+            "/model.10/m/m.0/Add_output_0",
+            "/model.10/Split_output_0"
+          ],
+          "outputs": [
+            "/model.10/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 2104405,
+          "gzipBytes": 1248574,
+          "parts": 4,
+          "resources": [
+            "main-s017-000.js",
+            "main-s017-001.js",
+            "main-s017-002.js",
+            "main-s017-003.js"
+          ],
+          "sha256": "ab99f3519b7ab9a6fd48f86d528e246f42501706f5535a4de127a6f70aec0f6b",
+          "gzipSha256": "b92e983452a77d78b2e6f644d5f21ded87f9a2975a1f62e57b43fe051bd71837",
+          "activationOutputBytes": 6553600,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 18,
+          "inputs": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.13/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 1776003,
+          "gzipBytes": 1056746,
+          "parts": 3,
+          "resources": [
+            "main-s018-000.js",
+            "main-s018-001.js",
+            "main-s018-002.js"
+          ],
+          "sha256": "0f7a803879f5705be4ecfbd04840ff9dd600f460da969315ac4cee5d76c13902",
+          "gzipSha256": "25eecbcc5fbfe85c1ec9dac4be65bd1d48f1ef103b4eb659eb274e850b4ba0f0",
+          "activationOutputBytes": 30720000,
+          "boundaryBytes": 9011200
+        },
+        {
+          "index": 19,
+          "inputs": [
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.16/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.16/cv1/conv/Conv_output_0"
+          ],
+          "nodes": 5,
+          "bytes": 263933,
+          "gzipBytes": 158969,
+          "parts": 1,
+          "resources": [
+            "main-s019-000.js"
+          ],
+          "sha256": "91d4519876336ca663ac5fe827823989733a92a36259da739e9114af1f79e5d2",
+          "gzipSha256": "c0327eea526efa3dfc5bd628ab66cff4be7de070360c1f78c56b64bace7a91fe",
+          "activationOutputBytes": 31129600,
+          "boundaryBytes": 5734400
+        },
+        {
+          "index": 20,
+          "inputs": [
+            "/model.16/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.16/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.16/cv2/conv/Conv_output_0"
+          ],
+          "nodes": 12,
+          "bytes": 249027,
+          "gzipBytes": 149897,
+          "parts": 1,
+          "resources": [
+            "main-s020-000.js"
+          ],
+          "sha256": "7e09347121bfd24ee96954a2914709d9f327bcff2093827244ce9a928d2c66fc",
+          "gzipSha256": "4835291c2abbeff7e4c8e8f8daf8991e393dcec784c9401759d1f44f3ee5a606",
+          "activationOutputBytes": 27033600,
+          "boundaryBytes": 5734400
+        },
+        {
+          "index": 21,
+          "inputs": [
+            "/model.16/cv2/conv/Conv_output_0",
+            "/model.13/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.0/cv2.0.1/conv/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/conv/Conv_output_0",
+            "/model.19/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.19/cv1/conv/Conv_output_0",
+            "/model.23/cv2.0/cv2.0.1/conv/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/conv/Conv_output_0"
+          ],
+          "nodes": 15,
+          "bytes": 1502430,
+          "gzipBytes": 900306,
+          "parts": 3,
+          "resources": [
+            "main-s021-000.js",
+            "main-s021-001.js",
+            "main-s021-002.js"
+          ],
+          "sha256": "aed2dbcdff138101eb4877b28992c4b224f2a7da474cf863c1c7f5ed12c53123",
+          "gzipSha256": "1dde8eefae7dd5333915af302f122c40daa12b8f462b1cfe617b84888756f7eb",
+          "activationOutputBytes": 32768000,
+          "boundaryBytes": 7372800
+        },
+        {
+          "index": 22,
+          "inputs": [
+            "/model.23/cv2.0/cv2.0.1/conv/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/conv/Conv_output_0",
+            "/model.19/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.1/cv3.0.1.0/conv/Conv_output_0",
+            "/model.19/Split_output_0",
+            "/model.19/Split_output_1"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.19/Split_output_0",
+            "/model.19/Split_output_1",
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.1/cv3.0.1.0/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 24101,
+          "gzipBytes": 14303,
+          "parts": 1,
+          "resources": [
+            "main-s022-000.js"
+          ],
+          "sha256": "fb510e4469b9fd7b8f580f6e2605baf276c33709bd1347eb16fed643fef44509",
+          "gzipSha256": "b161bbd6f485f227bd6fe46dff55ece27c9a8c5335b2df27f60b6ef5db5d4119",
+          "activationOutputBytes": 19660800,
+          "boundaryBytes": 7372800
+        },
+        {
+          "index": 23,
+          "inputs": [
+            "/model.23/cv3.0/cv3.0.1/cv3.0.1.0/conv/Conv_output_0",
+            "/model.19/Split_output_1",
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0",
+            "/model.19/Split_output_0"
+          ],
+          "outputs": [
+            "/model.23/Reshape_output_0",
+            "/model.19/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.19/cv2/conv/Conv_output_0",
+            "/model.23/Reshape_output_0"
+          ],
+          "nodes": 17,
+          "bytes": 1074051,
+          "gzipBytes": 643112,
+          "parts": 2,
+          "resources": [
+            "main-s023-000.js",
+            "main-s023-001.js"
+          ],
+          "sha256": "7794996943492a560cdd852847b9ad74443f9fba5a1a9e49dc5b80dc5b3418a0",
+          "gzipSha256": "e2595aaf94892359bc7dded03ab33ccf41173fd00b6fa41a0e036272c494bbc5",
+          "activationOutputBytes": 31104000,
+          "boundaryBytes": 5043200
+        },
+        {
+          "index": 24,
+          "inputs": [
+            "/model.19/cv2/conv/Conv_output_0",
+            "/model.10/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0",
+            "/model.22/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.22/cv1/conv/Conv_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0"
+          ],
+          "nodes": 15,
+          "bytes": 4818657,
+          "gzipBytes": 2877547,
+          "parts": 8,
+          "resources": [
+            "main-s024-000.js",
+            "main-s024-001.js",
+            "main-s024-002.js",
+            "main-s024-003.js",
+            "main-s024-004.js",
+            "main-s024-005.js",
+            "main-s024-006.js",
+            "main-s024-007.js"
+          ],
+          "sha256": "19e3592709cb64443eb51ee205feeb48ae206d4d461b03ee2fac4052c624e118",
+          "gzipSha256": "b51a00cd6a080fff16d63d768d03b3aee8e3f428591d54efc5d48a6c835ba7db",
+          "activationOutputBytes": 13926400,
+          "boundaryBytes": 4633600
+        },
+        {
+          "index": 25,
+          "inputs": [
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0",
+            "/model.22/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0",
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 24101,
+          "gzipBytes": 14439,
+          "parts": 1,
+          "resources": [
+            "main-s025-000.js"
+          ],
+          "sha256": "581019dc215c8a36fd50dd9da9343d8c8cea136afbcf4fe47ce16cdc8caf13f6",
+          "gzipSha256": "0dcfaf6b6d915080f67ec55b14082415e6ca47da94213e2865acad92062eccbb",
+          "activationOutputBytes": 6144000,
+          "boundaryBytes": 4633600
+        },
+        {
+          "index": 26,
+          "inputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "outputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 331627,
+          "gzipBytes": 198465,
+          "parts": 1,
+          "resources": [
+            "main-s026-000.js"
+          ],
+          "sha256": "df5c164d32b0ff6b067915ef75da9637bc9bacfb0ea7e84224aa6f17ddcece89",
+          "gzipSha256": "b9e6ba7964674b81ba3ca140baaf8a612a730e26f5d09333ee3c627841f9ba51",
+          "activationOutputBytes": 3686400,
+          "boundaryBytes": 5043200
+        },
+        {
+          "index": 27,
+          "inputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/Reshape_1_output_0",
+            "/model.22/m.0/Concat_output_0"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.22/m.0/Concat_output_0",
+            "/model.23/Reshape_1_output_0",
+            "/model.23/Reshape_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 2385155,
+          "gzipBytes": 1424511,
+          "parts": 4,
+          "resources": [
+            "main-s027-000.js",
+            "main-s027-001.js",
+            "main-s027-002.js",
+            "main-s027-003.js"
+          ],
+          "sha256": "f794452ae17d093a1f323070237a78a53dcdb7dfe5d22ea38faa6344b769432d",
+          "gzipSha256": "303ef6474e1a54e2349776c8d0b1ff637bd037fadaf56b5367bc2889af99affa",
+          "activationOutputBytes": 6444800,
+          "boundaryBytes": 4460800
+        },
+        {
+          "index": 28,
+          "inputs": [
+            "/model.22/m.0/Concat_output_0",
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "outputs": [
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0"
+          ],
+          "keep": [
+            "/model.23/Reshape_1_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0",
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 3470422,
+          "gzipBytes": 2086441,
+          "parts": 6,
+          "resources": [
+            "main-s028-000.js",
+            "main-s028-001.js",
+            "main-s028-002.js",
+            "main-s028-003.js",
+            "main-s028-004.js",
+            "main-s028-005.js"
+          ],
+          "sha256": "646f4fd59f49992c03448f7d78a816fade292a4facfd2b039256ec9ac15e1402",
+          "gzipSha256": "a0851b2c3437a273edf69c5d62630fb505be24eb029bf79ada4482c5a2b6699a",
+          "activationOutputBytes": 8704000,
+          "boundaryBytes": 3539200
+        },
+        {
+          "index": 29,
+          "inputs": [
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/Reshape_1_output_0"
+          ],
+          "outputs": [
+            "/model.23/Sigmoid_output_0",
+            "/model.23/Slice_output_0",
+            "/model.23/Slice_1_output_0"
+          ],
+          "keep": [
+            "/model.23/Sigmoid_output_0",
+            "/model.23/Slice_1_output_0",
+            "/model.23/Slice_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 94974,
+          "gzipBytes": 56361,
+          "parts": 1,
+          "resources": [
+            "main-s029-000.js"
+          ],
+          "sha256": "88a04e7fc6fd3d54a2c478d6c42df93fddbd74abf9d55a21f6670fe2613ecf77",
+          "gzipSha256": "5c2dc763b4414563460cfd3c1884b0dea4ed9fe99d7c72bb03ddcb5dc9d0a0b6",
+          "activationOutputBytes": 18646400,
+          "boundaryBytes": 1377600
+        },
+        {
+          "index": 30,
+          "inputs": [
+            "/model.23/Slice_output_0",
+            "/model.23/Slice_1_output_0",
+            "/model.23/Sigmoid_output_0"
+          ],
+          "outputs": [
+            "/model.23/Concat_5_cast_to_output0"
+          ],
+          "keep": [
+            "/model.23/Concat_5_cast_to_output0"
+          ],
+          "nodes": 8,
+          "bytes": 169343,
+          "gzipBytes": 2073,
+          "parts": 1,
+          "resources": [
+            "main-s030-000.js"
+          ],
+          "sha256": "428f67f6bbd82e387c3da99bda6237c05a05b471500e2c8ca30645f55c674cd2",
+          "gzipSha256": "b7017f192faf1f3a661c836ba041b2b7b0f5f544a0a1b8b98ea8298dc38efd7a",
+          "activationOutputBytes": 1982400,
+          "boundaryBytes": 1377600
+        }
+      ],
+      "totalNodes": 325,
+      "wholeActivationOutputBytes": 518465600
+    },
+    "aux": {
+      "source": "https://github.com/nikmomo/Mahjong-YOLO",
+      "sourceCommit": "28ffceed232ad95fd019c47a6c51ae7c78791a0e",
+      "sourceSha256": "55cc0cc6b355d24970ba379b0a83127ee78148ea1332d4bf18f482079529b486",
+      "splitPolicy": {
+        "maxNodes": 20,
+        "maxOutputBytes": 33554432
+      },
+      "wholeGraphSha256": "49f0eb0fafd22102d879ca5270dfb2779318e0edc8e672cf5b63413919126d1d",
+      "inputName": "images",
+      "outputName": "/model.23/Concat_5_cast_to_output0",
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "inputSize": 640,
+      "license": "AGPL-3.0",
+      "segments": [
+        {
+          "index": 0,
+          "inputs": [
+            "images"
+          ],
+          "outputs": [
+            "/model.2/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.2/cv1/conv/Conv_output_0"
+          ],
+          "nodes": 7,
+          "bytes": 25996,
+          "gzipBytes": 16241,
+          "parts": 1,
+          "resources": [
+            "aux-s000-000.js"
+          ],
+          "sha256": "e1d59a4d84af532066c411e7da8f423f2362df295ec205d9fbd67afad309885f",
+          "gzipSha256": "3b1da87dd2d0761ac75ce54af03fe4eb1b862630301f71e90e0a57b80b833760",
+          "activationOutputBytes": 32768000,
+          "boundaryBytes": 3276800
+        },
+        {
+          "index": 1,
+          "inputs": [
+            "/model.2/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "nodes": 12,
+          "bytes": 24156,
+          "gzipBytes": 14686,
+          "parts": 1,
+          "resources": [
+            "aux-s001-000.js"
+          ],
+          "sha256": "8863f9aa3fa6da079a57ef97e90bd26bfc54250982fb62aff49941688c28ac00",
+          "gzipSha256": "ccf25f22d1a4a00b88034ebb3ad7c1aceec2a14d0993ac57530e5bc08b7b1db8",
+          "activationOutputBytes": 30310400,
+          "boundaryBytes": 6553600
+        },
+        {
+          "index": 2,
+          "inputs": [
+            "/model.2/cv2/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.4/Concat_output_0"
+          ],
+          "keep": [
+            "/model.4/Concat_output_0"
+          ],
+          "nodes": 17,
+          "bytes": 204437,
+          "gzipBytes": 122591,
+          "parts": 1,
+          "resources": [
+            "aux-s002-000.js"
+          ],
+          "sha256": "727898548cf0b396f53642ff30a12c52c6f76873a64fba9923244439f3d25fb4",
+          "gzipSha256": "6982f1d719858275b95e44c89e46c318d3bb7eadfdd35dfd26fb44ed9f2e9fdb",
+          "activationOutputBytes": 31539200,
+          "boundaryBytes": 2457600
+        },
+        {
+          "index": 3,
+          "inputs": [
+            "/model.4/Concat_output_0"
+          ],
+          "outputs": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "nodes": 3,
+          "bytes": 50372,
+          "gzipBytes": 31175,
+          "parts": 1,
+          "resources": [
+            "aux-s003-000.js"
+          ],
+          "sha256": "2149d1fdca4bf64f3e77f06df27237d08eb6007eb2be3255bc48a028f6b4190e",
+          "gzipSha256": "7c3d4cdbe69466ab447ee8a8d2eb42c13037f962ba1d076461e81a15a68bb8a1",
+          "activationOutputBytes": 9830400,
+          "boundaryBytes": 3276800
+        },
+        {
+          "index": 4,
+          "inputs": [
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "nodes": 7,
+          "bytes": 657779,
+          "gzipBytes": 391538,
+          "parts": 1,
+          "resources": [
+            "aux-s004-000.js"
+          ],
+          "sha256": "7bb017f5fb606c7b43aa3c338d94ef2bb3a49c35ba907dca0c4944e4b54549df",
+          "gzipSha256": "18fc82d44167eab2994b8626a24e002d771737acd901eca40d923f809e73a388",
+          "activationOutputBytes": 5734400,
+          "boundaryBytes": 4096000
+        },
+        {
+          "index": 5,
+          "inputs": [
+            "/model.6/Split_output_1"
+          ],
+          "outputs": [
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/m.0/m/m.1/Add_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1",
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/m.0/m/m.1/Add_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 169012,
+          "gzipBytes": 100176,
+          "parts": 1,
+          "resources": [
+            "aux-s005-000.js"
+          ],
+          "sha256": "d334481f627fbc6dc9aeb58a2bc5bb96f73b164499c387a9cadf92656cc84cb2",
+          "gzipSha256": "39387ce227920d76e0c0bd54963ab7aa12353ac3e1759d1ba7c80e623815d874",
+          "activationOutputBytes": 4096000,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 6,
+          "inputs": [
+            "/model.6/m.0/m/m.1/Add_output_0",
+            "/model.6/m.0/cv2/act/Mul_output_0",
+            "/model.6/Split_output_0",
+            "/model.6/Split_output_1"
+          ],
+          "outputs": [
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 8,
+          "bytes": 117230,
+          "gzipBytes": 70447,
+          "parts": 1,
+          "resources": [
+            "aux-s006-000.js"
+          ],
+          "sha256": "e0cc43f4368b404e3a34479445408356974a4bfd8604f7e5c72f50b34215e154",
+          "gzipSha256": "73386076fa82d0738153afde57c588d9d3d93c467a7c48892f2812c1e99d1892",
+          "activationOutputBytes": 5324800,
+          "boundaryBytes": 4096000
+        },
+        {
+          "index": 7,
+          "inputs": [
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "nodes": 7,
+          "bytes": 1445239,
+          "gzipBytes": 855311,
+          "parts": 3,
+          "resources": [
+            "aux-s007-000.js",
+            "aux-s007-001.js",
+            "aux-s007-002.js"
+          ],
+          "sha256": "934679afdf51bc0a33ee89206452692c4f1c1ea79d3558dbe1ece48a3a330f89",
+          "gzipSha256": "b65cc3e8c1d66ce3ba2f85d0e3b7e048db2b16adb6020f2c2a81cd6a06ff6b71",
+          "activationOutputBytes": 2867200,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 8,
+          "inputs": [
+            "/model.8/Split_output_1"
+          ],
+          "outputs": [
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/m.0/m/m.1/Add_output_0"
+          ],
+          "keep": [
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1",
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/m.0/m/m.1/Add_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 661307,
+          "gzipBytes": 391932,
+          "parts": 1,
+          "resources": [
+            "aux-s008-000.js"
+          ],
+          "sha256": "73acbc47fd00b23ea3dea2265f4fc1548bcd23d0f8db2019ef8f1571bbcba932",
+          "gzipSha256": "189c53c0474b45129f64d44fcf75984e3842a2e5ee545e052d283bad17fc585e",
+          "activationOutputBytes": 2048000,
+          "boundaryBytes": 4710400
+        },
+        {
+          "index": 9,
+          "inputs": [
+            "/model.8/m.0/m/m.1/Add_output_0",
+            "/model.8/m.0/cv2/act/Mul_output_0",
+            "/model.8/Split_output_0",
+            "/model.8/Split_output_1"
+          ],
+          "outputs": [
+            "/model.10/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv1/conv/Conv_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 1384320,
+          "gzipBytes": 821748,
+          "parts": 3,
+          "resources": [
+            "aux-s009-000.js",
+            "aux-s009-001.js",
+            "aux-s009-002.js"
+          ],
+          "sha256": "12d471bb40e3f8f1145d9729f9f5adb5608cffdceca792f919faa9c16e2ef95d",
+          "gzipSha256": "ff5bd6754e08837e93d5e9fc8109cb09fa11753b230e4a1aaea8878afeb7a779",
+          "activationOutputBytes": 6348800,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 10,
+          "inputs": [
+            "/model.10/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.10/Split_output_0",
+            "/model.10/m/m.0/Add_output_0"
+          ],
+          "keep": [
+            "/model.10/Split_output_0",
+            "/model.10/m/m.0/Add_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 18,
+          "bytes": 207127,
+          "gzipBytes": 123736,
+          "parts": 1,
+          "resources": [
+            "aux-s010-000.js"
+          ],
+          "sha256": "239303a938737d1552a1b6c1874b2c77a689fc738ffea949a685597dfa112829",
+          "gzipSha256": "99d647b07f2b289ac510de13449b170ae8aca583043d5ace1e189e886133b0f9",
+          "activationOutputBytes": 9113600,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 11,
+          "inputs": [
+            "/model.10/m/m.0/Add_output_0",
+            "/model.10/Split_output_0"
+          ],
+          "outputs": [
+            "/model.10/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 528979,
+          "gzipBytes": 315318,
+          "parts": 1,
+          "resources": [
+            "aux-s011-000.js"
+          ],
+          "sha256": "7a824bdf191b9cc455084b501e97b9f623fb90c151954a7a85c257d109c8a9a8",
+          "gzipSha256": "6d0d9b7d6f59896f362c30b815e8172adf774e5bc7c06ec6eaeaa52f4245fd07",
+          "activationOutputBytes": 3276800,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 12,
+          "inputs": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.6/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.13/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 447485,
+          "gzipBytes": 267285,
+          "parts": 1,
+          "resources": [
+            "aux-s012-000.js"
+          ],
+          "sha256": "a899f631bd8172c4a5e5bf53095945807cb14f27a95f9618f520645cc97c5d1a",
+          "gzipSha256": "cff61a26588ffe715f8a28c7d7795ba449627c69041560f6ae3ab246bdd98eb3",
+          "activationOutputBytes": 15360000,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 13,
+          "inputs": [
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.4/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.16/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0",
+            "/model.16/cv2/act/Mul_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 131381,
+          "gzipBytes": 78920,
+          "parts": 1,
+          "resources": [
+            "aux-s013-000.js"
+          ],
+          "sha256": "1c63ad7eb3b788cfaa9ca780b6b16916d3c9aff64605f47ae7a036a19da6ab46",
+          "gzipSha256": "02abd00e02c525dba7108b1e143bbd261255d9710bb0eb0a8f22f381aba2164d",
+          "activationOutputBytes": 32358400,
+          "boundaryBytes": 2867200
+        },
+        {
+          "index": 14,
+          "inputs": [
+            "/model.16/cv2/act/Mul_output_0",
+            "/model.13/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/act/Mul_output_0",
+            "/model.19/cv1/act/Mul_output_0",
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.19/cv1/act/Mul_output_0",
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0",
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/act/Mul_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 582606,
+          "gzipBytes": 350155,
+          "parts": 1,
+          "resources": [
+            "aux-s014-000.js"
+          ],
+          "sha256": "01a00ec8c7e194971c3fd43310a8a50e8cc3e2b48a76ba9edd0974b50af1a0dc",
+          "gzipSha256": "b244f7d7d0ebc6159168ff57649c12bfd514261e5e374318e464333be98fc6ed",
+          "activationOutputBytes": 26214400,
+          "boundaryBytes": 4505600
+        },
+        {
+          "index": 15,
+          "inputs": [
+            "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/act/Mul_output_0",
+            "/model.19/cv1/act/Mul_output_0",
+            "/model.23/cv2.0/cv2.0.2/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.23/Reshape_output_0",
+            "/model.19/cv2/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.10/cv2/act/Mul_output_0",
+            "/model.19/cv2/conv/Conv_output_0",
+            "/model.23/Reshape_output_0"
+          ],
+          "nodes": 19,
+          "bytes": 280039,
+          "gzipBytes": 167922,
+          "parts": 1,
+          "resources": [
+            "aux-s015-000.js"
+          ],
+          "sha256": "12756302c50d0c2bbef4fcd616e1ddd916d1d80f3c72348c327d8cbdab7ab0cb",
+          "gzipSha256": "f5065a14290d4927a47c55170fd11a867a7a88467f9a531b99296d8515532584",
+          "activationOutputBytes": 21068800,
+          "boundaryBytes": 3814400
+        },
+        {
+          "index": 16,
+          "inputs": [
+            "/model.19/cv2/conv/Conv_output_0",
+            "/model.10/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0",
+            "/model.22/cv1/conv/Conv_output_0"
+          ],
+          "keep": [
+            "/model.22/cv1/conv/Conv_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0"
+          ],
+          "nodes": 15,
+          "bytes": 1469402,
+          "gzipBytes": 878855,
+          "parts": 3,
+          "resources": [
+            "aux-s016-000.js",
+            "aux-s016-001.js",
+            "aux-s016-002.js"
+          ],
+          "sha256": "57b53219a61cb6eabb175964152f387ea0fbed96e39b64b6ac9f0636ef45fdc8",
+          "gzipSha256": "a4a371d8fb9d0a05ceab1a47523bb5604ec1a519f7e2036095903f17bcf8284d",
+          "activationOutputBytes": 7782400,
+          "boundaryBytes": 3814400
+        },
+        {
+          "index": 17,
+          "inputs": [
+            "/model.23/cv2.1/cv2.1.1/conv/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_output_0",
+            "/model.22/cv1/conv/Conv_output_0"
+          ],
+          "outputs": [
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0",
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 21535,
+          "gzipBytes": 12815,
+          "parts": 1,
+          "resources": [
+            "aux-s017-000.js"
+          ],
+          "sha256": "72825ec390e5cd4c44e8a305f9e356f73670ea292aec57aaceba54314e1ebcea",
+          "gzipSha256": "9d4c400d7212ac1a951467b915a6aca18adc6c7e1567908746044eabda0a2d4e",
+          "activationOutputBytes": 3686400,
+          "boundaryBytes": 3814400
+        },
+        {
+          "index": 18,
+          "inputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "outputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0"
+          ],
+          "nodes": 9,
+          "bytes": 85087,
+          "gzipBytes": 51053,
+          "parts": 1,
+          "resources": [
+            "aux-s018-000.js"
+          ],
+          "sha256": "d3c3e4d6079e842d5c68568f6db54c537fdb86e065e9256814c428be339824f6",
+          "gzipSha256": "0ee28abf9b42bda8a90db3e91b346244940a3a758f87a1884bb196da312cf0d0",
+          "activationOutputBytes": 1843200,
+          "boundaryBytes": 4019200
+        },
+        {
+          "index": 19,
+          "inputs": [
+            "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_output_0",
+            "/model.22/m.0/cv1/act/Mul_output_0",
+            "/model.23/cv2.1/cv2.1.2/Conv_output_0",
+            "/model.22/m.0/cv2/act/Mul_output_0"
+          ],
+          "outputs": [
+            "/model.23/Reshape_1_output_0",
+            "/model.22/m.0/Concat_output_0"
+          ],
+          "keep": [
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1",
+            "/model.22/m.0/Concat_output_0",
+            "/model.23/Reshape_1_output_0",
+            "/model.23/Reshape_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 605167,
+          "gzipBytes": 362463,
+          "parts": 1,
+          "resources": [
+            "aux-s019-000.js"
+          ],
+          "sha256": "85a76d235954e24121973e9021b4ba75042816cfa90224aa75106ae0a94a729e",
+          "gzipSha256": "898cb8e96bca94ed6aaade62c80ce03e6d4e9ce0b3fbd37be9b46176b0352a7b",
+          "activationOutputBytes": 3987200,
+          "boundaryBytes": 3846400
+        },
+        {
+          "index": 20,
+          "inputs": [
+            "/model.22/m.0/Concat_output_0",
+            "/model.22/Split_output_0",
+            "/model.22/Split_output_1"
+          ],
+          "outputs": [
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0"
+          ],
+          "keep": [
+            "/model.23/Reshape_1_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0",
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 1295695,
+          "gzipBytes": 779147,
+          "parts": 2,
+          "resources": [
+            "aux-s020-000.js",
+            "aux-s020-001.js"
+          ],
+          "sha256": "41235aaa412390dbf89d051eb1f1449ed03271781128ace29cbad0e247a4aaf0",
+          "gzipSha256": "c394441dfd5682c6121026d27d0b0b1edfd6372ece245369e11fd48596e90780",
+          "activationOutputBytes": 4710400,
+          "boundaryBytes": 3436800
+        },
+        {
+          "index": 21,
+          "inputs": [
+            "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/act/Mul_output_0",
+            "/model.23/cv2.2/cv2.2.2/Conv_output_0",
+            "/model.23/Reshape_output_0",
+            "/model.23/Reshape_1_output_0"
+          ],
+          "outputs": [
+            "/model.23/Sigmoid_output_0",
+            "/model.23/Slice_output_0",
+            "/model.23/Slice_1_output_0"
+          ],
+          "keep": [
+            "/model.23/Sigmoid_output_0",
+            "/model.23/Slice_1_output_0",
+            "/model.23/Slice_output_0"
+          ],
+          "nodes": 20,
+          "bytes": 33523,
+          "gzipBytes": 18940,
+          "parts": 1,
+          "resources": [
+            "aux-s021-000.js"
+          ],
+          "sha256": "05be6acbfad61a78c64bb5086c040d95f3dc0e38a09ff8ef5d1f967a503d4f3e",
+          "gzipSha256": "e510e860b8bc79e613021224dab95d5cbc75c55bcdb2822331c27a09ec0cca4b",
+          "activationOutputBytes": 18032000,
+          "boundaryBytes": 1377600
+        },
+        {
+          "index": 22,
+          "inputs": [
+            "/model.23/Slice_output_0",
+            "/model.23/Slice_1_output_0",
+            "/model.23/Sigmoid_output_0"
+          ],
+          "outputs": [
+            "/model.23/Concat_5_cast_to_output0"
+          ],
+          "keep": [
+            "/model.23/Concat_5_cast_to_output0"
+          ],
+          "nodes": 8,
+          "bytes": 169342,
+          "gzipBytes": 2071,
+          "parts": 1,
+          "resources": [
+            "aux-s022-000.js"
+          ],
+          "sha256": "7906dd07af9a05dc4cfdb0d8ef80479c217c42e89656ad7048de6a86d3252195",
+          "gzipSha256": "2888422e7f5ab4ae653c49d2509b53e78733e6ec3b4f9ec1bed531dc5c3c3434",
+          "activationOutputBytes": 1982400,
+          "boundaryBytes": 1377600
+        }
+      ],
+      "totalNodes": 325,
+      "wholeActivationOutputBytes": 280283200
+    }
+  }
+}

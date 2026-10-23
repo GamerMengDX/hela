@@ -1,0 +1,116 @@
+{
+  "description": "和啦 · 四人日本麻将算点工具",
+  "projectname": "和啦",
+  "appid": "touristappid",
+  "compileType": "miniprogram",
+  "miniprogramRoot": "./",
+  "libVersion": "3.17.3",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "urlCheck": true,
+    "compileHotReLoad": true,
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "condition": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "packOptions": {
+    "ignore": [
+      {
+        "value": "README.md",
+        "type": "file"
+      }
+    ],
+    "include": [
+      {
+        "type": "file",
+        "value": "vision-part-01/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-02/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-03/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-04/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-05/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-06/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-07/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-08/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-09/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-10/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-11/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-12/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-13/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-part-14/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-aux-01/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-aux-02/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-aux-03/weights.bin"
+      },
+      {
+        "type": "file",
+        "value": "vision-aux-04/weights.bin"
+      }
+    ]
+  },
+  "simulatorPluginLibVersion": {},
+  "editorSetting": {}
+}
