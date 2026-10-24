@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="moon">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#263e4b">
+<meta name="hela-build" content="web 0.6.2">
+<meta name="description" content="和啦 · 立直麻将算点、役种图鉴、30 个教学示例、组牌与算点练习、本地四人记分。">
+<title>和啦 · 立直麻将算点</title>
+<!-- 启动占位样式：只服务于 #startup-note / noscript 块 / guard 面板。它们随 HTML
+     本体一起发布（不用外链样式），所以脚本被禁用、被拦截或还没跑起来时这段说明
+     依然可读可排版。 -->
+<style id="boot-styles">
+.boot-note{box-sizing:border-box;max-width:38rem;margin:6vh auto;padding:20px 22px;border-radius:16px;background:#263e4b;color:#eaf2f6;font:400 15px/1.7 system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC","Hiragino Sans","Microsoft YaHei",sans-serif}
+.boot-note .boot-title{margin:0 0 6px;font-size:1.05rem;font-weight:700;letter-spacing:.02em}
+.boot-note .boot-lead{margin:0 0 10px;font-weight:600;color:#cfe4ee}
+.boot-note ul{margin:0;padding-left:1.15rem}
+.boot-note li{margin:0 0 8px}
+.boot-note li:last-child{margin-bottom:0}
+.boot-note .boot-foot{margin:10px 0 0;font-size:.86rem;color:#b9d2de}
+.boot-note code{font:inherit;padding:0 .2em;border-radius:4px;background:rgba(255,255,255,.14)}
+.boot-noscript{margin-top:0}
+.boot-status{position:fixed;left:0;right:0;bottom:0;z-index:2147483647;box-sizing:border-box;max-height:45vh;overflow:auto;padding:10px 14px;background:#3b1f22;color:#ffe9e6;border-top:2px solid #b95f5f;font:400 13px/1.55 system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC","Hiragino Sans",sans-serif;white-space:pre-line;text-align:left}
+</style>
+<link rel="icon" href="./assets/platform-icon-mochi.png">
+<link rel="apple-touch-icon" href="./assets/app-icon-buddies.webp">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div id="app">
+<!-- 静态启动占位：脚本没有运行（file:// 拦截 ES module、扩展/内嵌浏览器不执行脚本、
+     下载不完整）时，用户看到的仍然是一段可读的打开说明，而不是白屏。应用启动成功后
+     app.js 会整体改写 #app，这段占位随之消失。 -->
+<section id="startup-note" class="boot-note" role="note" aria-label="打开说明 / 開き方 / How to open">
+<h1 class="boot-title">和啦 · 立直麻将算点</h1>
+<p class="boot-lead">正在启动… ／ 起動中… ／ Starting…</p>
+<ul>
+<li lang="zh-CN"><strong>中文</strong>：请把本文件保存到本机，再用常见浏览器（Chrome / Edge / Safari / Firefox）打开。离线单文件版可以直接双击；完整 Web 版（含照片识别）需要用本地静态服务器打开，直接双击 <code>index.html</code> 不会显示界面。</li>
+<li lang="ja"><strong>日本語</strong>：このファイルを端末に保存し、一般的なブラウザ（Chrome / Edge / Safari / Firefox）で開いてください。オフライン単一ファイル版はそのまま開けますが、フル Web 版（写真認識あり）はローカルの静的サーバーで開く必要があります。</li>
+<li lang="en"><strong>English</strong>: save this file and open it in a regular browser (Chrome / Edge / Safari / Firefox). The offline single-file build opens directly; the full web build (with photo recognition) needs a local static server, so double-clicking <code>index.html</code> will not render the app.</li>
+</ul>
+<p class="boot-foot">算点、图鉴、教学、练习、点棒表离线也能用。 ／ 点数計算・役一覧・教学・練習・点数表はオフラインでも使えます。 ／ Scoring, the yaku guide, teaching, practice and the table all work offline.</p>
+<p class="boot-foot">不需要联网。 ／ ネット接続は不要です。 ／ No internet connection is required. 如果一直停在这里，请看页面底部或浏览器控制台的启动提示。 ／ このまま進まない場合はページ下部の起動メッセージをご確認ください。 ／ If this page never reaches the home screen, check the startup message at the bottom of the page.</p>
+</section>
+</div>
+<noscript>
+<section class="boot-note boot-noscript" lang="zh-CN">
+<p class="boot-lead">JavaScript 未运行。 ／ JavaScript が無効です。 ／ JavaScript is not running.</p>
+<p>本页需要浏览器执行页面自带的脚本，但不需要联网。请允许 JavaScript（或改用未被拦截的浏览器/内置浏览器）后重新打开本文件；上面的打开说明在脚本被禁用时同样适用。</p>
+</section>
+</noscript>
+<!-- 启动 guard：极小经典内联脚本，必须先于应用脚本执行。
+     目的：应用脚本完全没有运行，或启动阶段抛错时，页面不至于只剩白屏——静态说明留在
+     #app 里，这里再在 body 末尾追加一条可读的状态条（只用 textContent，不注入 HTML）。
+     边界（由 web-build-lib 的 auditSingleHtml 与 test/web-boot 的守卫用例共同锁定）：
+       1. 首页真正渲染成功后 app.js 会给根元素置 data-hela-ready="true" 并派发 hela:ready，
+          本 guard 随即移除状态条，之后任何异常都不再写入，因此不会遮挡或替换已渲染的界面；
+       2. 只写自己的 #hela-startup-status 状态条，绝不改写 #app，所以不会清掉用户已录入的手牌；
+       3. 不调用 preventDefault：错误照常出现在控制台，不会被吞掉，也不谎称已就绪；
+       4. 状态条文字只有三语说明、构建标记与净化截断后的错误摘要，不含完整堆栈、本机路径或 URL。 -->
+<script data-hela-startup-guard>
+(function () {
+  'use strict';
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+  var PANEL_ID = 'hela-startup-status';
+  var WATCHDOG_MS = 8000;
+  var DETAIL_LIMIT = 140;
+  var doc = document;
+  var panel = null;
+  var timer = null;
+
+  function isReady() {
+    try {
+      return !!doc.documentElement && doc.documentElement.getAttribute('data-hela-ready') === 'true';
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function buildTag() {
+    try {
+      var meta = typeof doc.querySelector === 'function' ? doc.querySelector('meta[name="hela-build"]') : null;
+      var value = meta && typeof meta.getAttribute === 'function' ? meta.getAttribute('content') : '';
+      return value ? String(value).slice(0, 40) : 'dev';
+    } catch (error) {
+      return 'dev';
+    }
+  }
+
+  // 只保留可读、无隐私的短摘要：URL 与绝对路径换成省略号，折叠空白并截断长度。
+  function safe(value) {
+    var text;
+    try {
+      text = value === null || value === undefined ? '' : String(value);
+    } catch (error) {
+      return '';
+    }
+    return text
+      .replace(/[a-z][a-z0-9+.-]*:\/\/\S*/gi, '…')
+      .replace(/(^|[\s("'\[])\/(?:Users|home|var|tmp|private|opt|root|Volumes|mnt)\/[^\s"'\)\]]*/g, '$1…')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, DETAIL_LIMIT);
+  }
+
+  function clearPanel() {
+    if (timer !== null) {
+      try { clearTimeout(timer); } catch (error) {}
+      timer = null;
+    }
+    if (panel && panel.parentNode) {
+      try { panel.parentNode.removeChild(panel); } catch (error) {}
+    }
+    panel = null;
+  }
+
+  function paint(lines) {
+    if (!doc.body || typeof doc.createElement !== 'function') return;
+    if (!panel || !panel.parentNode) {
+      panel = doc.createElement('div');
+      panel.id = PANEL_ID;
+      panel.className = 'boot-status';
+      panel.setAttribute('role', 'status');
+      panel.setAttribute('aria-live', 'polite');
+      doc.body.appendChild(panel);
+    }
+    panel.textContent = lines.join('\n');
+  }
+
+  var HOW_TO_OPEN = '把本文件保存到本机，用常见浏览器（Chrome / Edge / Safari / Firefox）打开；完整 Web 版需要用本地静态服务器打开。 ／ ファイルを保存し、一般的なブラウザで開いてください。フル Web 版はローカルの静的サーバーが必要です。 ／ Save this file and open it in a regular browser; the full web build needs a local static server.';
+
+  function report(kind, detail) {
+    if (isReady()) {
+      clearPanel();
+      return;
+    }
+    var safeDetail = safe(detail);
+    var lines = safeDetail
+      ? ['启动时出错，首页可能无法显示（重新打开前请先看下面的说明）。 ／ 起動時にエラーが発生しました。 ／ The app hit an error while starting.', HOW_TO_OPEN]
+      : ['页面还没有完成启动，脚本可能没有运行。 ／ 起動が完了していません。 ／ The page has not finished starting; the script may not have run.', HOW_TO_OPEN];
+    lines.push('[' + kind + '] build ' + buildTag() + (safeDetail ? ' · ' + safeDetail : ''));
+    paint(lines);
+  }
+
+  function onError(event) {
+    var kind = 'error';
+    var detail = '';
+    try {
+      if (event) {
+        var target = event.target;
+        if (target && target !== window && !event.message) {
+          // 资源加载失败（脚本/样式被拦截或缺失）：事件本身没有 message。
+          kind = 'load';
+          try {
+            if (typeof target.getAttribute === 'function') {
+              detail = target.getAttribute('src') || target.getAttribute('href') || '';
+              if (detail) detail = 'failed to load ' + detail;
+            }
+          } catch (error) {}
+        } else {
+          detail = event.message || '';
+          if (!detail && event.error) {
+            var thrown = event.error;
+            detail = (thrown.name ? thrown.name + ': ' : '') + (thrown.message || '');
+          }
+        }
+      }
+    } catch (error) {
+      detail = '';
+    }
+    report(kind, detail);
+  }
+
+  function onRejection(event) {
+    var detail = '';
+    try {
+      var reason = event && event.reason;
+      if (typeof reason === 'string') detail = reason;
+      else if (reason && typeof reason === 'object') detail = (reason.name ? reason.name + ': ' : '') + (reason.message || '');
+    } catch (error) {
+      detail = '';
+    }
+    report('rejection', detail);
+  }
+
+  function onReady() {
+    clearPanel();
+  }
+
+  try {
+    if (typeof window.addEventListener === 'function') {
+      // 捕获阶段：静态资源加载失败的事件落在元素上，只有捕获阶段能看到。
+      window.addEventListener('error', onError, true);
+      window.addEventListener('unhandledrejection', onRejection);
+    }
+    if (typeof doc.addEventListener === 'function') doc.addEventListener('hela:ready', onReady);
+    if (typeof setTimeout === 'function') {
+      // 兜底：8 秒后仍未就绪，说明脚本根本没跑（或卡在启动前），给出中性提示而不是白屏。
+      timer = setTimeout(function () {
+        timer = null;
+        if (!isReady()) report('startup', '');
+      }, WATCHDOG_MS);
+    }
+  } catch (error) {
+    // 监听安装失败也不能让页面卡死：静态说明仍在 #app 里。
+  }
+})();
+</script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

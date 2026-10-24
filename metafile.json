@@ -1,0 +1,5988 @@
+{
+  "inputs": {
+    "web/src/styles.css": {
+      "bytes": 21879,
+      "imports": []
+    },
+    "web/src/application.css": {
+      "bytes": 26090,
+      "imports": []
+    },
+    "web/src/teaching.css": {
+      "bytes": 9871,
+      "imports": []
+    },
+    "web/src/web.css": {
+      "bytes": 3971,
+      "imports": []
+    },
+    "<define:__HELA_LEGAL__>": {
+      "bytes": 36385,
+      "imports": []
+    },
+    "src/i18n/runtime.js": {
+      "bytes": 4284,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/locale-store.js": {
+      "bytes": 4417,
+      "imports": [
+        {
+          "path": "src/i18n/runtime.js",
+          "kind": "import-statement",
+          "original": "./runtime.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/catalogs/native.js": {
+      "bytes": 97855,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/catalogs/heybox.js": {
+      "bytes": 74551,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/catalogs/shared.js": {
+      "bytes": 47590,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/catalogs.js": {
+      "bytes": 1489,
+      "imports": [
+        {
+          "path": "src/i18n/catalogs/native.js",
+          "kind": "import-statement",
+          "original": "./catalogs/native.js"
+        },
+        {
+          "path": "src/i18n/catalogs/heybox.js",
+          "kind": "import-statement",
+          "original": "./catalogs/heybox.js"
+        },
+        {
+          "path": "src/i18n/catalogs/shared.js",
+          "kind": "import-statement",
+          "original": "./catalogs/shared.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/index.js": {
+      "bytes": 1286,
+      "imports": [
+        {
+          "path": "src/i18n/runtime.js",
+          "kind": "import-statement",
+          "original": "./runtime.js"
+        },
+        {
+          "path": "src/i18n/locale-store.js",
+          "kind": "import-statement",
+          "original": "./locale-store.js"
+        },
+        {
+          "path": "src/i18n/catalogs.js",
+          "kind": "import-statement",
+          "original": "./catalogs.js"
+        },
+        {
+          "path": "src/i18n/catalogs.js",
+          "kind": "import-statement",
+          "original": "./catalogs.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/data.js": {
+      "bytes": 5928,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/examples.js": {
+      "bytes": 676,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/teaching-examples.js": {
+      "bytes": 5659,
+      "imports": [
+        {
+          "path": "src/examples.js",
+          "kind": "import-statement",
+          "original": "./examples.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/i18n/presenters.js": {
+      "bytes": 16242,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        },
+        {
+          "path": "src/data.js",
+          "kind": "import-statement",
+          "original": "../data.js"
+        },
+        {
+          "path": "src/teaching-examples.js",
+          "kind": "import-statement",
+          "original": "../teaching-examples.js"
+        },
+        {
+          "path": "src/i18n/catalogs/shared.js",
+          "kind": "import-statement",
+          "original": "./catalogs/shared.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/locale.js": {
+      "bytes": 870,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@kobalab/majiang-core/lib/rule.js": {
+      "bytes": 2051,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/shoupai.js": {
+      "bytes": 14132,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/shan.js": {
+      "bytes": 2446,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/he.js": {
+      "bytes": 912,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/board.js": {
+      "bytes": 4135,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/he.js",
+          "kind": "require-call",
+          "original": "./he"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/xiangting.js": {
+      "bytes": 5001,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/hule.js": {
+      "bytes": 24477,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shan.js",
+          "kind": "require-call",
+          "original": "./shan"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/rule.js",
+          "kind": "require-call",
+          "original": "./rule"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/game.js": {
+      "bytes": 37618,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/rule.js",
+          "kind": "require-call",
+          "original": "./rule"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shan.js",
+          "kind": "require-call",
+          "original": "./shan"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/he.js",
+          "kind": "require-call",
+          "original": "./he"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/xiangting.js",
+          "kind": "require-call",
+          "original": "./xiangting"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/hule.js",
+          "kind": "require-call",
+          "original": "./hule"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/player.js": {
+      "bytes": 5824,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/he.js",
+          "kind": "require-call",
+          "original": "./he"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/game.js",
+          "kind": "require-call",
+          "original": "./game"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/board.js",
+          "kind": "require-call",
+          "original": "./board"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/xiangting.js",
+          "kind": "require-call",
+          "original": "./xiangting"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/hule.js",
+          "kind": "require-call",
+          "original": "./hule"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/@kobalab/majiang-core/lib/index.js": {
+      "bytes": 545,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/rule.js",
+          "kind": "require-call",
+          "original": "./rule"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shoupai.js",
+          "kind": "require-call",
+          "original": "./shoupai"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/shan.js",
+          "kind": "require-call",
+          "original": "./shan"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/he.js",
+          "kind": "require-call",
+          "original": "./he"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/board.js",
+          "kind": "require-call",
+          "original": "./board"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/game.js",
+          "kind": "require-call",
+          "original": "./game"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/player.js",
+          "kind": "require-call",
+          "original": "./player"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/xiangting.js",
+          "kind": "require-call",
+          "original": "./xiangting"
+        },
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/hule.js",
+          "kind": "require-call",
+          "original": "./hule"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/engine.js": {
+      "bytes": 11544,
+      "imports": [
+        {
+          "path": "node_modules/@kobalab/majiang-core/lib/index.js",
+          "kind": "import-statement",
+          "original": "@kobalab/majiang-core"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/hand-input.js": {
+      "bytes": 467,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/themes.js": {
+      "bytes": 1168,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/table-state.js": {
+      "bytes": 1417,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/repository.js": {
+      "bytes": 4175,
+      "imports": [
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../src/engine.js"
+        },
+        {
+          "path": "src/hand-input.js",
+          "kind": "import-statement",
+          "original": "../../src/hand-input.js"
+        },
+        {
+          "path": "web/src/themes.js",
+          "kind": "import-statement",
+          "original": "./themes.js"
+        },
+        {
+          "path": "web/src/table-state.js",
+          "kind": "import-statement",
+          "original": "./table-state.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/assets.js": {
+      "bytes": 505,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/calculator.js": {
+      "bytes": 29699,
+      "imports": [
+        {
+          "path": "web/src/locale.js",
+          "kind": "import-statement",
+          "original": "./locale.js"
+        },
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../src/engine.js"
+        },
+        {
+          "path": "src/hand-input.js",
+          "kind": "import-statement",
+          "original": "../../src/hand-input.js"
+        },
+        {
+          "path": "web/src/repository.js",
+          "kind": "import-statement",
+          "original": "./repository.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "web/src/assets.js",
+          "kind": "import-statement",
+          "original": "./assets.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/teaching-model.js": {
+      "bytes": 8064,
+      "imports": [
+        {
+          "path": "src/teaching-examples.js",
+          "kind": "import-statement",
+          "original": "./teaching-examples.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "./engine.js"
+        },
+        {
+          "path": "src/data.js",
+          "kind": "import-statement",
+          "original": "./data.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/teaching-exercise.js": {
+      "bytes": 6432,
+      "imports": [
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "./engine.js"
+        },
+        {
+          "path": "src/teaching-model.js",
+          "kind": "import-statement",
+          "original": "./teaching-model.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/teaching.js": {
+      "bytes": 1671,
+      "imports": [
+        {
+          "path": "src/teaching-model.js",
+          "kind": "import-statement",
+          "original": "./teaching-model.js"
+        },
+        {
+          "path": "src/teaching-examples.js",
+          "kind": "import-statement",
+          "original": "./teaching-examples.js"
+        },
+        {
+          "path": "src/teaching-exercise.js",
+          "kind": "import-statement",
+          "original": "./teaching-exercise.js"
+        },
+        {
+          "path": "src/teaching-model.js",
+          "kind": "import-statement",
+          "original": "./teaching-model.js"
+        },
+        {
+          "path": "src/teaching-examples.js",
+          "kind": "import-statement",
+          "original": "./teaching-examples.js"
+        },
+        {
+          "path": "src/teaching-exercise.js",
+          "kind": "import-statement",
+          "original": "./teaching-exercise.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/ui.js": {
+      "bytes": 3451,
+      "imports": [
+        {
+          "path": "web/src/locale.js",
+          "kind": "import-statement",
+          "original": "./locale.js"
+        },
+        {
+          "path": "web/src/assets.js",
+          "kind": "import-statement",
+          "original": "./assets.js"
+        },
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../src/engine.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/teaching-view.js": {
+      "bytes": 12911,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "src/teaching.js",
+          "kind": "import-statement",
+          "original": "../../src/teaching.js"
+        },
+        {
+          "path": "web/src/ui.js",
+          "kind": "import-statement",
+          "original": "./ui.js"
+        },
+        {
+          "path": "web/src/assets.js",
+          "kind": "import-statement",
+          "original": "./assets.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/photo.css": {
+      "bytes": 8167,
+      "imports": []
+    },
+    "web/src/vision/photo-locale.js": {
+      "bytes": 7735,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../../src/i18n/index.js"
+        },
+        {
+          "path": "web/src/locale.js",
+          "kind": "import-statement",
+          "original": "../locale.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/review.js": {
+      "bytes": 3388,
+      "imports": [
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../../src/engine.js"
+        },
+        {
+          "path": "src/hand-input.js",
+          "kind": "import-statement",
+          "original": "../../../src/hand-input.js"
+        },
+        {
+          "path": "web/src/repository.js",
+          "kind": "import-statement",
+          "original": "../repository.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/memory-policy.js": {
+      "bytes": 246,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/photo-source.js": {
+      "bytes": 5300,
+      "imports": [
+        {
+          "path": "web/src/vision/memory-policy.js",
+          "kind": "import-statement",
+          "original": "./memory-policy.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/diagnostics.js": {
+      "bytes": 2257,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/web-photo-picker.js": {
+      "bytes": 1903,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/shared.js": {
+      "bytes": 152831,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/shared.js": {
+      "bytes": 288,
+      "imports": [
+        {
+          "path": "heybox-miniprogram/src/vision/shared.js",
+          "kind": "import-statement",
+          "original": "../../../heybox-miniprogram/src/vision/shared.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/generated/manifest.json": {
+      "bytes": 52058,
+      "imports": []
+    },
+    "node_modules/fflate/esm/browser.js": {
+      "bytes": 90922,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/stream-model.js": {
+      "bytes": 1488,
+      "imports": [
+        {
+          "path": "node_modules/fflate/esm/browser.js",
+          "kind": "import-statement",
+          "original": "fflate"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/staged-runner.js": {
+      "bytes": 5990,
+      "imports": [
+        {
+          "path": "web/src/vision/stream-model.js",
+          "kind": "import-statement",
+          "original": "./stream-model.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/paired-infer.js": {
+      "bytes": 1209,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/scheduler.js": {
+      "bytes": 528,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/vendor-webgl.js": {
+      "bytes": 432030,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/vendor-webgl.js": {
+      "bytes": 443,
+      "imports": [
+        {
+          "path": "heybox-miniprogram/src/vision/vendor-webgl.js",
+          "kind": "import-statement",
+          "original": "../../../heybox-miniprogram/src/vision/vendor-webgl.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/vendor-webgl.js",
+          "kind": "import-statement",
+          "original": "../../../heybox-miniprogram/src/vision/vendor-webgl.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s000-000.js": {
+      "bytes": 3583,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s001-000.js": {
+      "bytes": 61779,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s002-000.js": {
+      "bytes": 14767,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s003-000.js": {
+      "bytes": 271,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s004-000.js": {
+      "bytes": 31907,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s005-000.js": {
+      "bytes": 41603,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s006-000.js": {
+      "bytes": 470071,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s007-000.js": {
+      "bytes": 54923,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s008-000.js": {
+      "bytes": 276835,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s009-000.js": {
+      "bytes": 263,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s010-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s010-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s010-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s010-003.js": {
+      "bytes": 499767,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s011-000.js": {
+      "bytes": 522571,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s012-000.js": {
+      "bytes": 366651,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-003.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-004.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-005.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-006.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-007.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s013-008.js": {
+      "bytes": 345231,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s014-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s014-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s014-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s014-003.js": {
+      "bytes": 500375,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-003.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-004.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-005.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-006.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-007.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s015-008.js": {
+      "bytes": 148367,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s016-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s016-001.js": {
+      "bytes": 112859,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s017-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s017-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s017-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s017-003.js": {
+      "bytes": 91923,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s018-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s018-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s018-002.js": {
+      "bytes": 360439,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s019-000.js": {
+      "bytes": 211979,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s020-000.js": {
+      "bytes": 199883,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s021-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s021-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s021-002.js": {
+      "bytes": 151851,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s022-000.js": {
+      "bytes": 19091,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s023-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s023-001.js": {
+      "bytes": 333215,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-003.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-004.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-005.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-006.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s024-007.js": {
+      "bytes": 166735,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s025-000.js": {
+      "bytes": 19271,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s026-000.js": {
+      "bytes": 264639,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s027-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s027-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s027-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s027-003.js": {
+      "bytes": 326503,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-002.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-003.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-004.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s028-005.js": {
+      "bytes": 160503,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s029-000.js": {
+      "bytes": 75167,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main-s030-000.js": {
+      "bytes": 2783,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/main.js": {
+      "bytes": 2621,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s000-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s000-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s001-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s001-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s002-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s002-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s003-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s003-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s004-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s004-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s005-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s005-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s006-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s006-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s007-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s007-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s008-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s008-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s009-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s009-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s010-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s010-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s010-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s010-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s010-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s010-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s010-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s010-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s011-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s011-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s012-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s012-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-004.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-004.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-005.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-005.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-006.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-006.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-007.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-007.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s013-008.js",
+          "kind": "dynamic-import",
+          "original": "./main-s013-008.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s014-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s014-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s014-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s014-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s014-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s014-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s014-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s014-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-004.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-004.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-005.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-005.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-006.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-006.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-007.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-007.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s015-008.js",
+          "kind": "dynamic-import",
+          "original": "./main-s015-008.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s016-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s016-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s016-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s016-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s017-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s017-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s017-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s017-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s017-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s017-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s017-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s017-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s018-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s018-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s018-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s018-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s018-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s018-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s019-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s019-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s020-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s020-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s021-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s021-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s021-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s021-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s021-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s021-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s022-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s022-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s023-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s023-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s023-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s023-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-004.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-004.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-005.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-005.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-006.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-006.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s024-007.js",
+          "kind": "dynamic-import",
+          "original": "./main-s024-007.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s025-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s025-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s026-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s026-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s027-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s027-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s027-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s027-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s027-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s027-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s027-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s027-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-001.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-002.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-003.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-003.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-004.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-004.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s028-005.js",
+          "kind": "dynamic-import",
+          "original": "./main-s028-005.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s029-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s029-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main-s030-000.js",
+          "kind": "dynamic-import",
+          "original": "./main-s030-000.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/generated/main.js": {
+      "bytes": 305,
+      "imports": [
+        {
+          "path": "heybox-miniprogram/src/vision/generated/main.js",
+          "kind": "import-statement",
+          "original": "../../../../heybox-miniprogram/src/vision/generated/main.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s000-000.js": {
+      "bytes": 21675,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s001-000.js": {
+      "bytes": 19603,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s002-000.js": {
+      "bytes": 163475,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s003-000.js": {
+      "bytes": 41587,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s004-000.js": {
+      "bytes": 522071,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s005-000.js": {
+      "bytes": 133587,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s006-000.js": {
+      "bytes": 93951,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s007-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s007-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s007-002.js": {
+      "bytes": 91859,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s008-000.js": {
+      "bytes": 522595,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s009-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s009-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s009-002.js": {
+      "bytes": 47107,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s010-000.js": {
+      "bytes": 165003,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s011-000.js": {
+      "bytes": 420443,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s012-000.js": {
+      "bytes": 356399,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s013-000.js": {
+      "bytes": 105247,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s014-000.js": {
+      "bytes": 466895,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s015-000.js": {
+      "bytes": 223915,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s016-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s016-001.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s016-002.js": {
+      "bytes": 123251,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s017-000.js": {
+      "bytes": 17107,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s018-000.js": {
+      "bytes": 68091,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s019-000.js": {
+      "bytes": 483303,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s020-000.js": {
+      "bytes": 524307,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s020-001.js": {
+      "bytes": 514595,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s021-000.js": {
+      "bytes": 25275,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux-s022-000.js": {
+      "bytes": 2783,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "heybox-miniprogram/src/vision/generated/aux.js": {
+      "bytes": 1024,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s000-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s000-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s001-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s001-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s002-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s002-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s003-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s003-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s004-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s004-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s005-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s005-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s006-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s006-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s007-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s007-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s007-001.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s007-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s007-002.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s007-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s008-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s008-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s009-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s009-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s009-001.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s009-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s009-002.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s009-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s010-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s010-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s011-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s011-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s012-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s012-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s013-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s013-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s014-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s014-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s015-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s015-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s016-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s016-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s016-001.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s016-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s016-002.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s016-002.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s017-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s017-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s018-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s018-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s019-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s019-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s020-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s020-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s020-001.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s020-001.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s021-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s021-000.js"
+        },
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux-s022-000.js",
+          "kind": "dynamic-import",
+          "original": "./aux-s022-000.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/generated/aux.js": {
+      "bytes": 205,
+      "imports": [
+        {
+          "path": "heybox-miniprogram/src/vision/generated/aux.js",
+          "kind": "import-statement",
+          "original": "../../../../heybox-miniprogram/src/vision/generated/aux.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/recognizer.js": {
+      "bytes": 4909,
+      "imports": [
+        {
+          "path": "web/src/vision/generated/manifest.json",
+          "kind": "import-statement",
+          "original": "./generated/manifest.json"
+        },
+        {
+          "path": "web/src/vision/shared.js",
+          "kind": "import-statement",
+          "original": "./shared.js"
+        },
+        {
+          "path": "web/src/vision/staged-runner.js",
+          "kind": "import-statement",
+          "original": "./staged-runner.js"
+        },
+        {
+          "path": "web/src/vision/paired-infer.js",
+          "kind": "import-statement",
+          "original": "./paired-infer.js"
+        },
+        {
+          "path": "web/src/vision/scheduler.js",
+          "kind": "import-statement",
+          "original": "./scheduler.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "web/src/vision/vendor-webgl.js",
+          "kind": "dynamic-import",
+          "original": "./vendor-webgl.js"
+        },
+        {
+          "path": "web/src/vision/generated/main.js",
+          "kind": "dynamic-import",
+          "original": "./generated/main.js"
+        },
+        {
+          "path": "web/src/vision/generated/aux.js",
+          "kind": "dynamic-import",
+          "original": "./generated/aux.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/vision/photo-page.js": {
+      "bytes": 25385,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../../src/i18n/index.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../../src/i18n/presenters.js"
+        },
+        {
+          "path": "web/src/vision/photo-locale.js",
+          "kind": "import-statement",
+          "original": "./photo-locale.js"
+        },
+        {
+          "path": "web/src/ui.js",
+          "kind": "import-statement",
+          "original": "../ui.js"
+        },
+        {
+          "path": "web/src/repository.js",
+          "kind": "import-statement",
+          "original": "../repository.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../../src/engine.js"
+        },
+        {
+          "path": "web/src/vision/review.js",
+          "kind": "import-statement",
+          "original": "./review.js"
+        },
+        {
+          "path": "web/src/vision/photo-source.js",
+          "kind": "import-statement",
+          "original": "./photo-source.js"
+        },
+        {
+          "path": "web/src/vision/diagnostics.js",
+          "kind": "import-statement",
+          "original": "./diagnostics.js"
+        },
+        {
+          "path": "web/src/vision/web-photo-picker.js",
+          "kind": "import-statement",
+          "original": "./web-photo-picker.js"
+        },
+        {
+          "path": "web/src/vision/shared.js",
+          "kind": "import-statement",
+          "original": "./shared.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "web/src/vision/recognizer.js",
+          "kind": "dynamic-import",
+          "original": "./recognizer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/photo-slot.js": {
+      "bytes": 704,
+      "imports": [
+        {
+          "path": "web/src/vision/photo.css",
+          "kind": "import-statement",
+          "original": "./vision/photo.css"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "web/src/vision/photo-page.js",
+          "kind": "dynamic-import",
+          "original": "./vision/photo-page.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/version.js": {
+      "bytes": 287,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/web-strings.js": {
+      "bytes": 6337,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/legal.js": {
+      "bytes": 1434,
+      "imports": [
+        {
+          "path": "web/src/version.js",
+          "kind": "import-statement",
+          "original": "./version.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/platform.js": {
+      "bytes": 9906,
+      "imports": [
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/local-table.js": {
+      "bytes": 11019,
+      "imports": [
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../src/engine.js"
+        },
+        {
+          "path": "web/src/repository.js",
+          "kind": "import-statement",
+          "original": "./repository.js"
+        },
+        {
+          "path": "web/src/table-state.js",
+          "kind": "import-statement",
+          "original": "./table-state.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/practice.js": {
+      "bytes": 4784,
+      "imports": [
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "./engine.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/app.js": {
+      "bytes": 40638,
+      "imports": [
+        {
+          "path": "web/src/locale.js",
+          "kind": "import-statement",
+          "original": "./locale.js"
+        },
+        {
+          "path": "src/i18n/presenters.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/presenters.js"
+        },
+        {
+          "path": "src/i18n/index.js",
+          "kind": "import-statement",
+          "original": "../../src/i18n/index.js"
+        },
+        {
+          "path": "web/src/calculator.js",
+          "kind": "import-statement",
+          "original": "./calculator.js"
+        },
+        {
+          "path": "web/src/teaching-view.js",
+          "kind": "import-statement",
+          "original": "./teaching-view.js"
+        },
+        {
+          "path": "web/src/photo-slot.js",
+          "kind": "import-statement",
+          "original": "./photo-slot.js"
+        },
+        {
+          "path": "web/src/version.js",
+          "kind": "import-statement",
+          "original": "./version.js"
+        },
+        {
+          "path": "web/src/web-strings.js",
+          "kind": "import-statement",
+          "original": "./web-strings.js"
+        },
+        {
+          "path": "web/src/assets.js",
+          "kind": "import-statement",
+          "original": "./assets.js"
+        },
+        {
+          "path": "web/src/legal.js",
+          "kind": "import-statement",
+          "original": "./legal.js"
+        },
+        {
+          "path": "web/src/themes.js",
+          "kind": "import-statement",
+          "original": "./themes.js"
+        },
+        {
+          "path": "web/src/platform.js",
+          "kind": "import-statement",
+          "original": "./platform.js"
+        },
+        {
+          "path": "web/src/repository.js",
+          "kind": "import-statement",
+          "original": "./repository.js"
+        },
+        {
+          "path": "web/src/local-table.js",
+          "kind": "import-statement",
+          "original": "./local-table.js"
+        },
+        {
+          "path": "src/engine.js",
+          "kind": "import-statement",
+          "original": "../../src/engine.js"
+        },
+        {
+          "path": "src/data.js",
+          "kind": "import-statement",
+          "original": "../../src/data.js"
+        },
+        {
+          "path": "src/practice.js",
+          "kind": "import-statement",
+          "original": "../../src/practice.js"
+        },
+        {
+          "path": "web/src/ui.js",
+          "kind": "import-statement",
+          "original": "./ui.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "web/src/main.js": {
+      "bytes": 115,
+      "imports": [
+        {
+          "path": "web/src/styles.css",
+          "kind": "import-statement",
+          "original": "./styles.css"
+        },
+        {
+          "path": "web/src/application.css",
+          "kind": "import-statement",
+          "original": "./application.css"
+        },
+        {
+          "path": "web/src/teaching.css",
+          "kind": "import-statement",
+          "original": "./teaching.css"
+        },
+        {
+          "path": "web/src/web.css",
+          "kind": "import-statement",
+          "original": "./web.css"
+        },
+        {
+          "path": "web/src/app.js",
+          "kind": "import-statement",
+          "original": "./app.js"
+        },
+        {
+          "path": "<define:__HELA_LEGAL__>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/web/chunks/photo-page-HZSQUK37.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-XNY5BVMD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/chunk-C2VQL4G3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/recognizer-XZ2PDL6Z.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "PhotoPage"
+      ],
+      "entryPoint": "web/src/vision/photo-page.js",
+      "inputs": {
+        "web/src/vision/photo-page.js": {
+          "bytesInOutput": 20522
+        },
+        "web/src/vision/photo-locale.js": {
+          "bytesInOutput": 6782
+        },
+        "web/src/vision/review.js": {
+          "bytesInOutput": 2194
+        },
+        "web/src/vision/photo-source.js": {
+          "bytesInOutput": 4095
+        },
+        "web/src/vision/memory-policy.js": {
+          "bytesInOutput": 134
+        },
+        "web/src/vision/diagnostics.js": {
+          "bytesInOutput": 1510
+        },
+        "web/src/vision/web-photo-picker.js": {
+          "bytesInOutput": 1025
+        }
+      },
+      "bytes": 36497
+    },
+    "dist/web/chunks/aux-s018-000-WHFMXNVK.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s018-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s018-000.js": {
+          "bytesInOutput": 68085
+        }
+      },
+      "bytes": 68147
+    },
+    "dist/web/chunks/aux-s019-000-ZQJYWCKO.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s019-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s019-000.js": {
+          "bytesInOutput": 483297
+        }
+      },
+      "bytes": 483359
+    },
+    "dist/web/chunks/aux-s020-000-S774BIVJ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s020-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s020-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s020-001-MOBLPFSD.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s020-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s020-001.js": {
+          "bytesInOutput": 514589
+        }
+      },
+      "bytes": 514651
+    },
+    "dist/web/chunks/aux-s021-000-UD2GYER5.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s021-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s021-000.js": {
+          "bytesInOutput": 25269
+        }
+      },
+      "bytes": 25331
+    },
+    "dist/web/chunks/aux-s022-000-YY4237BH.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s022-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s022-000.js": {
+          "bytesInOutput": 2777
+        }
+      },
+      "bytes": 2839
+    },
+    "dist/web/chunks/aux-OJCQXRZP.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/aux-s000-000-PZVZFOBE.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s001-000-W2JT22VV.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s002-000-LHOKR345.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s003-000-2C22LZPS.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s004-000-MGKPQIFE.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s005-000-HD2AUUIV.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s006-000-WW7RK2ZN.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s007-000-URYOPBLO.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s007-001-XLVOEVH2.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s007-002-ZEM75OPA.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s008-000-2VMPSRJB.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s009-000-GWNBERQU.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s009-001-K45WINEW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s009-002-JAMOCKBC.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s010-000-XYHVKQJ5.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s011-000-34YAIWES.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s012-000-YOK56KKW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s013-000-NFL4SJHW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s014-000-B7D3QCMU.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s015-000-BSPDJBUW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s016-000-Y7V4EZ3H.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s016-001-WBU4XRBD.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s016-002-TMBEF5SC.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s017-000-7NFRYUIR.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s018-000-WHFMXNVK.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s019-000-ZQJYWCKO.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s020-000-S774BIVJ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s020-001-MOBLPFSD.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s021-000-UD2GYER5.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-s022-000-YY4237BH.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "web/src/vision/generated/aux.js",
+      "inputs": {
+        "web/src/vision/generated/aux.js": {
+          "bytesInOutput": 4
+        },
+        "heybox-miniprogram/src/vision/generated/aux.js": {
+          "bytesInOutput": 1288
+        }
+      },
+      "bytes": 1354
+    },
+    "dist/web/chunks/recognizer-XZ2PDL6Z.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-XNY5BVMD.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/vendor-webgl-LEMBHW4L.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-OMGUXT4N.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/aux-OJCQXRZP.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "recognizePhoto"
+      ],
+      "entryPoint": "web/src/vision/recognizer.js",
+      "inputs": {
+        "web/src/vision/recognizer.js": {
+          "bytesInOutput": 2759
+        },
+        "web/src/vision/generated/manifest.json": {
+          "bytesInOutput": 32080
+        },
+        "web/src/vision/staged-runner.js": {
+          "bytesInOutput": 2486
+        },
+        "web/src/vision/stream-model.js": {
+          "bytesInOutput": 869
+        },
+        "node_modules/fflate/esm/browser.js": {
+          "bytesInOutput": 5075
+        },
+        "web/src/vision/paired-infer.js": {
+          "bytesInOutput": 586
+        },
+        "web/src/vision/scheduler.js": {
+          "bytesInOutput": 255
+        }
+      },
+      "bytes": 44269
+    },
+    "dist/web/chunks/chunk-XNY5BVMD.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i"
+      ],
+      "inputs": {
+        "heybox-miniprogram/src/vision/shared.js": {
+          "bytesInOutput": 134774
+        },
+        "web/src/vision/shared.js": {
+          "bytesInOutput": 4
+        }
+      },
+      "bytes": 134899
+    },
+    "dist/web/chunks/aux-s012-000-YOK56KKW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s012-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s012-000.js": {
+          "bytesInOutput": 356393
+        }
+      },
+      "bytes": 356455
+    },
+    "dist/web/chunks/aux-s013-000-NFL4SJHW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s013-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s013-000.js": {
+          "bytesInOutput": 105241
+        }
+      },
+      "bytes": 105303
+    },
+    "dist/web/chunks/aux-s014-000-B7D3QCMU.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s014-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s014-000.js": {
+          "bytesInOutput": 466889
+        }
+      },
+      "bytes": 466951
+    },
+    "dist/web/chunks/aux-s015-000-BSPDJBUW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s015-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s015-000.js": {
+          "bytesInOutput": 223909
+        }
+      },
+      "bytes": 223971
+    },
+    "dist/web/chunks/aux-s016-000-Y7V4EZ3H.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s016-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s016-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s016-001-WBU4XRBD.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s016-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s016-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s016-002-TMBEF5SC.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s016-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s016-002.js": {
+          "bytesInOutput": 123245
+        }
+      },
+      "bytes": 123307
+    },
+    "dist/web/chunks/aux-s017-000-7NFRYUIR.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s017-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s017-000.js": {
+          "bytesInOutput": 17101
+        }
+      },
+      "bytes": 17163
+    },
+    "dist/web/chunks/aux-s007-001-XLVOEVH2.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s007-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s007-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s007-002-ZEM75OPA.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s007-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s007-002.js": {
+          "bytesInOutput": 91853
+        }
+      },
+      "bytes": 91915
+    },
+    "dist/web/chunks/aux-s008-000-2VMPSRJB.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s008-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s008-000.js": {
+          "bytesInOutput": 522589
+        }
+      },
+      "bytes": 522651
+    },
+    "dist/web/chunks/aux-s009-000-GWNBERQU.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s009-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s009-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s009-001-K45WINEW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s009-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s009-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/aux-s009-002-JAMOCKBC.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s009-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s009-002.js": {
+          "bytesInOutput": 47101
+        }
+      },
+      "bytes": 47163
+    },
+    "dist/web/chunks/aux-s010-000-XYHVKQJ5.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s010-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s010-000.js": {
+          "bytesInOutput": 164997
+        }
+      },
+      "bytes": 165059
+    },
+    "dist/web/chunks/aux-s011-000-34YAIWES.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s011-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s011-000.js": {
+          "bytesInOutput": 420437
+        }
+      },
+      "bytes": 420499
+    },
+    "dist/web/chunks/aux-s000-000-PZVZFOBE.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s000-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s000-000.js": {
+          "bytesInOutput": 21669
+        }
+      },
+      "bytes": 21731
+    },
+    "dist/web/chunks/aux-s001-000-W2JT22VV.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s001-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s001-000.js": {
+          "bytesInOutput": 19597
+        }
+      },
+      "bytes": 19659
+    },
+    "dist/web/chunks/aux-s002-000-LHOKR345.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s002-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s002-000.js": {
+          "bytesInOutput": 163469
+        }
+      },
+      "bytes": 163531
+    },
+    "dist/web/chunks/aux-s003-000-2C22LZPS.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s003-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s003-000.js": {
+          "bytesInOutput": 41581
+        }
+      },
+      "bytes": 41643
+    },
+    "dist/web/chunks/aux-s004-000-MGKPQIFE.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s004-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s004-000.js": {
+          "bytesInOutput": 522065
+        }
+      },
+      "bytes": 522127
+    },
+    "dist/web/chunks/aux-s005-000-HD2AUUIV.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s005-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s005-000.js": {
+          "bytesInOutput": 133581
+        }
+      },
+      "bytes": 133643
+    },
+    "dist/web/chunks/aux-s006-000-WW7RK2ZN.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s006-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s006-000.js": {
+          "bytesInOutput": 93945
+        }
+      },
+      "bytes": 94007
+    },
+    "dist/web/chunks/aux-s007-000-URYOPBLO.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/aux-s007-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/aux-s007-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s028-001-RIAJT64Y.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s028-002-VEGTNPMR.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s028-003-V5FJPOZD.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-003.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s028-004-GI7DVHHW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-004.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-004.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s028-005-ZFHEGMWC.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-005.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-005.js": {
+          "bytesInOutput": 160497
+        }
+      },
+      "bytes": 160559
+    },
+    "dist/web/chunks/main-s029-000-OYJH453J.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s029-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s029-000.js": {
+          "bytesInOutput": 75161
+        }
+      },
+      "bytes": 75223
+    },
+    "dist/web/chunks/main-s030-000-L7IHHHHA.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s030-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s030-000.js": {
+          "bytesInOutput": 2777
+        }
+      },
+      "bytes": 2839
+    },
+    "dist/web/chunks/main-OMGUXT4N.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/main-s000-000-L74FX7BM.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s001-000-XQNRI2DI.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s002-000-FLB5P4L6.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s003-000-JBXGESIL.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s004-000-75TXBLYM.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s005-000-6GWDF3UK.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s006-000-CGHPFQKK.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s007-000-WXYUVB37.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s008-000-GIYXT7F6.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s009-000-JM4FEVNS.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s010-000-5MFGXEKT.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s010-001-YV6XYHAO.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s010-002-V6IKET4L.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s010-003-LRYD2SXW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s011-000-LCLOWC52.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s012-000-GZWLRXTH.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-000-NH3O2DZ4.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-001-QSOIGTZE.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-002-Y5B2VVBQ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-003-7GO6MG4Y.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-004-F3PKTQTN.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-005-I2F2CL2W.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-006-NB25T3MC.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-007-Q2SN533U.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s013-008-IHT6XA3R.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s014-000-5Y2CIXBV.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s014-001-YFZMLAEP.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s014-002-BLQCJRWC.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s014-003-QQSZTU6G.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-000-Y356FHIE.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-001-N7M7T4QS.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-002-YG4T7WDH.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-003-ZGMZO53H.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-004-XHPSLO7U.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-005-QNTOR7LG.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-006-EHJVEXSJ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-007-WQAJWIDQ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s015-008-GCFVHSBH.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s016-000-PRO7VIWN.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s016-001-DVPDYJFR.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s017-000-ARAWUQQU.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s017-001-6SPIQAZM.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s017-002-4HLBL5LK.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s017-003-EATXKGHS.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s018-000-73Q7R6KU.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s018-001-HDZTIC6G.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s018-002-FX3IDOI6.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s019-000-QU4KQWRV.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s020-000-JR3G2FKQ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s021-000-H4LX7YOI.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s021-001-D7BSLSTL.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s021-002-O4ONUWCS.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s022-000-U253IAA5.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s023-000-RJ4B4ETJ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s023-001-IWZECJKQ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-000-GLFJQIKX.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-001-L5K7C4TB.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-002-AK3FDSOM.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-003-P6LOK2BZ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-004-BVLHNWSR.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-005-MHHFAZNA.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-006-327FILSY.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s024-007-4WPAYVBP.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s025-000-6OWSPFKB.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s026-000-3COAS4RH.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s027-000-K5PGPWJZ.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s027-001-Z6RG2Z3B.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s027-002-ZKLBD6M4.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s027-003-UG47RZBB.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-000-6IZSV65V.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-001-RIAJT64Y.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-002-VEGTNPMR.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-003-V5FJPOZD.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-004-GI7DVHHW.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s028-005-ZFHEGMWC.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s029-000-OYJH453J.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/web/chunks/main-s030-000-L7IHHHHA.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "web/src/vision/generated/main.js",
+      "inputs": {
+        "web/src/vision/generated/main.js": {
+          "bytesInOutput": 4
+        },
+        "heybox-miniprogram/src/vision/generated/main.js": {
+          "bytesInOutput": 3308
+        }
+      },
+      "bytes": 3374
+    },
+    "dist/web/chunks/main-s024-007-4WPAYVBP.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-007.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-007.js": {
+          "bytesInOutput": 166729
+        }
+      },
+      "bytes": 166791
+    },
+    "dist/web/chunks/main-s025-000-6OWSPFKB.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s025-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s025-000.js": {
+          "bytesInOutput": 19265
+        }
+      },
+      "bytes": 19327
+    },
+    "dist/web/chunks/main-s026-000-3COAS4RH.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s026-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s026-000.js": {
+          "bytesInOutput": 264633
+        }
+      },
+      "bytes": 264695
+    },
+    "dist/web/chunks/main-s027-000-K5PGPWJZ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s027-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s027-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s027-001-Z6RG2Z3B.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s027-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s027-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s027-002-ZKLBD6M4.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s027-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s027-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s027-003-UG47RZBB.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s027-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s027-003.js": {
+          "bytesInOutput": 326497
+        }
+      },
+      "bytes": 326559
+    },
+    "dist/web/chunks/main-s028-000-6IZSV65V.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s028-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s028-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s023-001-IWZECJKQ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s023-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s023-001.js": {
+          "bytesInOutput": 333209
+        }
+      },
+      "bytes": 333271
+    },
+    "dist/web/chunks/main-s024-000-GLFJQIKX.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-001-L5K7C4TB.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-002-AK3FDSOM.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-003-P6LOK2BZ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-003.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-004-BVLHNWSR.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-004.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-004.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-005-MHHFAZNA.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-005.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-005.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s024-006-327FILSY.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s024-006.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s024-006.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s018-002-FX3IDOI6.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s018-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s018-002.js": {
+          "bytesInOutput": 360433
+        }
+      },
+      "bytes": 360495
+    },
+    "dist/web/chunks/main-s019-000-QU4KQWRV.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s019-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s019-000.js": {
+          "bytesInOutput": 211973
+        }
+      },
+      "bytes": 212035
+    },
+    "dist/web/chunks/main-s020-000-JR3G2FKQ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s020-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s020-000.js": {
+          "bytesInOutput": 199877
+        }
+      },
+      "bytes": 199939
+    },
+    "dist/web/chunks/main-s021-000-H4LX7YOI.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s021-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s021-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s021-001-D7BSLSTL.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s021-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s021-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s021-002-O4ONUWCS.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s021-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s021-002.js": {
+          "bytesInOutput": 151845
+        }
+      },
+      "bytes": 151907
+    },
+    "dist/web/chunks/main-s022-000-U253IAA5.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s022-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s022-000.js": {
+          "bytesInOutput": 19085
+        }
+      },
+      "bytes": 19147
+    },
+    "dist/web/chunks/main-s023-000-RJ4B4ETJ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s023-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s023-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s016-000-PRO7VIWN.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s016-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s016-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s016-001-DVPDYJFR.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s016-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s016-001.js": {
+          "bytesInOutput": 112853
+        }
+      },
+      "bytes": 112915
+    },
+    "dist/web/chunks/main-s017-000-ARAWUQQU.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s017-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s017-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s017-001-6SPIQAZM.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s017-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s017-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s017-002-4HLBL5LK.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s017-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s017-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s017-003-EATXKGHS.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s017-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s017-003.js": {
+          "bytesInOutput": 91917
+        }
+      },
+      "bytes": 91979
+    },
+    "dist/web/chunks/main-s018-000-73Q7R6KU.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s018-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s018-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s018-001-HDZTIC6G.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s018-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s018-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-001-N7M7T4QS.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-002-YG4T7WDH.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-003-ZGMZO53H.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-003.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-004-XHPSLO7U.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-004.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-004.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-005-QNTOR7LG.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-005.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-005.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-006-EHJVEXSJ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-006.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-006.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-007-WQAJWIDQ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-007.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-007.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s015-008-GCFVHSBH.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-008.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-008.js": {
+          "bytesInOutput": 148361
+        }
+      },
+      "bytes": 148423
+    },
+    "dist/web/chunks/main-s013-006-NB25T3MC.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-006.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-006.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-007-Q2SN533U.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-007.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-007.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-008-IHT6XA3R.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-008.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-008.js": {
+          "bytesInOutput": 345225
+        }
+      },
+      "bytes": 345287
+    },
+    "dist/web/chunks/main-s014-000-5Y2CIXBV.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s014-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s014-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s014-001-YFZMLAEP.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s014-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s014-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s014-002-BLQCJRWC.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s014-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s014-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s014-003-QQSZTU6G.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s014-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s014-003.js": {
+          "bytesInOutput": 500369
+        }
+      },
+      "bytes": 500431
+    },
+    "dist/web/chunks/main-s015-000-Y356FHIE.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s015-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s015-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s011-000-LCLOWC52.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s011-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s011-000.js": {
+          "bytesInOutput": 522565
+        }
+      },
+      "bytes": 522627
+    },
+    "dist/web/chunks/main-s012-000-GZWLRXTH.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s012-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s012-000.js": {
+          "bytesInOutput": 366645
+        }
+      },
+      "bytes": 366707
+    },
+    "dist/web/chunks/main-s013-000-NH3O2DZ4.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-001-QSOIGTZE.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-002-Y5B2VVBQ.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-003-7GO6MG4Y.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-003.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-004-F3PKTQTN.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-004.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-004.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s013-005-I2F2CL2W.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s013-005.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s013-005.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s006-000-CGHPFQKK.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s006-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s006-000.js": {
+          "bytesInOutput": 470065
+        }
+      },
+      "bytes": 470127
+    },
+    "dist/web/chunks/main-s007-000-WXYUVB37.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s007-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s007-000.js": {
+          "bytesInOutput": 54917
+        }
+      },
+      "bytes": 54979
+    },
+    "dist/web/chunks/main-s008-000-GIYXT7F6.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s008-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s008-000.js": {
+          "bytesInOutput": 276829
+        }
+      },
+      "bytes": 276891
+    },
+    "dist/web/chunks/main-s009-000-JM4FEVNS.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s009-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s009-000.js": {
+          "bytesInOutput": 257
+        }
+      },
+      "bytes": 319
+    },
+    "dist/web/chunks/main-s010-000-5MFGXEKT.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s010-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s010-000.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s010-001-YV6XYHAO.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s010-001.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s010-001.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s010-002-V6IKET4L.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s010-002.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s010-002.js": {
+          "bytesInOutput": 524301
+        }
+      },
+      "bytes": 524363
+    },
+    "dist/web/chunks/main-s010-003-LRYD2SXW.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s010-003.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s010-003.js": {
+          "bytesInOutput": 499761
+        }
+      },
+      "bytes": 499823
+    },
+    "dist/web/main.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-C2VQL4G3.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/web/chunks/photo-page-HZSQUK37.js",
+          "kind": "dynamic-import"
+        }
+      ],
+      "exports": [],
+      "entryPoint": "web/src/main.js",
+      "cssBundle": "dist/web/main.css",
+      "inputs": {
+        "web/src/main.js": {
+          "bytesInOutput": 4
+        },
+        "web/src/styles.css": {
+          "bytesInOutput": 0
+        },
+        "web/src/application.css": {
+          "bytesInOutput": 0
+        },
+        "web/src/teaching.css": {
+          "bytesInOutput": 0
+        },
+        "web/src/web.css": {
+          "bytesInOutput": 0
+        },
+        "web/src/app.js": {
+          "bytesInOutput": 30283
+        },
+        "web/src/calculator.js": {
+          "bytesInOutput": 22805
+        },
+        "web/src/teaching-view.js": {
+          "bytesInOutput": 10794
+        },
+        "src/teaching.js": {
+          "bytesInOutput": 696
+        },
+        "src/teaching-model.js": {
+          "bytesInOutput": 5833
+        },
+        "src/teaching-exercise.js": {
+          "bytesInOutput": 4228
+        },
+        "web/src/photo-slot.js": {
+          "bytesInOutput": 108
+        },
+        "web/src/vision/photo.css": {
+          "bytesInOutput": 0
+        },
+        "web/src/version.js": {
+          "bytesInOutput": 19
+        },
+        "web/src/web-strings.js": {
+          "bytesInOutput": 5242
+        },
+        "web/src/legal.js": {
+          "bytesInOutput": 550
+        },
+        "web/src/platform.js": {
+          "bytesInOutput": 3091
+        },
+        "web/src/local-table.js": {
+          "bytesInOutput": 8518
+        },
+        "src/practice.js": {
+          "bytesInOutput": 3254
+        }
+      },
+      "bytes": 95929
+    },
+    "dist/web/chunks/chunk-C2VQL4G3.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "_",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "inputs": {
+        "node_modules/@kobalab/majiang-core/lib/rule.js": {
+          "bytesInOutput": 779
+        },
+        "node_modules/@kobalab/majiang-core/lib/shoupai.js": {
+          "bytesInOutput": 6603
+        },
+        "node_modules/@kobalab/majiang-core/lib/shan.js": {
+          "bytesInOutput": 1461
+        },
+        "node_modules/@kobalab/majiang-core/lib/he.js": {
+          "bytesInOutput": 556
+        },
+        "node_modules/@kobalab/majiang-core/lib/board.js": {
+          "bytesInOutput": 2321
+        },
+        "node_modules/@kobalab/majiang-core/lib/xiangting.js": {
+          "bytesInOutput": 2128
+        },
+        "node_modules/@kobalab/majiang-core/lib/hule.js": {
+          "bytesInOutput": 10832
+        },
+        "node_modules/@kobalab/majiang-core/lib/game.js": {
+          "bytesInOutput": 18174
+        },
+        "node_modules/@kobalab/majiang-core/lib/player.js": {
+          "bytesInOutput": 3186
+        },
+        "node_modules/@kobalab/majiang-core/lib/index.js": {
+          "bytesInOutput": 153
+        },
+        "src/i18n/index.js": {
+          "bytesInOutput": 432
+        },
+        "src/i18n/runtime.js": {
+          "bytesInOutput": 1419
+        },
+        "src/i18n/locale-store.js": {
+          "bytesInOutput": 1472
+        },
+        "src/i18n/catalogs.js": {
+          "bytesInOutput": 206
+        },
+        "src/i18n/catalogs/native.js": {
+          "bytesInOutput": 84331
+        },
+        "src/i18n/catalogs/heybox.js": {
+          "bytesInOutput": 64043
+        },
+        "src/i18n/catalogs/shared.js": {
+          "bytesInOutput": 41163
+        },
+        "src/i18n/presenters.js": {
+          "bytesInOutput": 10629
+        },
+        "src/data.js": {
+          "bytesInOutput": 5553
+        },
+        "src/teaching-examples.js": {
+          "bytesInOutput": 5335
+        },
+        "src/examples.js": {
+          "bytesInOutput": 647
+        },
+        "src/engine.js": {
+          "bytesInOutput": 8362
+        },
+        "web/src/repository.js": {
+          "bytesInOutput": 2727
+        },
+        "src/hand-input.js": {
+          "bytesInOutput": 191
+        },
+        "web/src/themes.js": {
+          "bytesInOutput": 886
+        },
+        "web/src/table-state.js": {
+          "bytesInOutput": 1296
+        },
+        "web/src/ui.js": {
+          "bytesInOutput": 2748
+        },
+        "web/src/locale.js": {
+          "bytesInOutput": 350
+        },
+        "web/src/assets.js": {
+          "bytesInOutput": 87
+        }
+      },
+      "bytes": 278551
+    },
+    "dist/web/chunks/vendor-webgl-LEMBHW4L.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "InferenceSession",
+        "TRACE",
+        "TRACE_EVENT_BEGIN",
+        "TRACE_EVENT_END",
+        "TRACE_FUNC_BEGIN",
+        "TRACE_FUNC_END",
+        "Tensor",
+        "default",
+        "env",
+        "registerBackend"
+      ],
+      "entryPoint": "web/src/vision/vendor-webgl.js",
+      "inputs": {
+        "web/src/vision/vendor-webgl.js": {
+          "bytesInOutput": 5
+        },
+        "heybox-miniprogram/src/vision/vendor-webgl.js": {
+          "bytesInOutput": 429165
+        }
+      },
+      "bytes": 429411
+    },
+    "dist/web/chunks/main-s000-000-L74FX7BM.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s000-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s000-000.js": {
+          "bytesInOutput": 3577
+        }
+      },
+      "bytes": 3639
+    },
+    "dist/web/chunks/main-s001-000-XQNRI2DI.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s001-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s001-000.js": {
+          "bytesInOutput": 61773
+        }
+      },
+      "bytes": 61835
+    },
+    "dist/web/chunks/main-s002-000-FLB5P4L6.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s002-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s002-000.js": {
+          "bytesInOutput": 14761
+        }
+      },
+      "bytes": 14823
+    },
+    "dist/web/chunks/main-s003-000-JBXGESIL.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s003-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s003-000.js": {
+          "bytesInOutput": 265
+        }
+      },
+      "bytes": 327
+    },
+    "dist/web/chunks/main-s004-000-75TXBLYM.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s004-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s004-000.js": {
+          "bytesInOutput": 31901
+        }
+      },
+      "bytes": 31963
+    },
+    "dist/web/chunks/main-s005-000-6GWDF3UK.js": {
+      "imports": [
+        {
+          "path": "dist/web/chunks/chunk-CQG5MVIV.js",
+          "kind": "import-statement"
+        }
+      ],
+      "exports": [
+        "default"
+      ],
+      "entryPoint": "heybox-miniprogram/src/vision/generated/main-s005-000.js",
+      "inputs": {
+        "heybox-miniprogram/src/vision/generated/main-s005-000.js": {
+          "bytesInOutput": 41597
+        }
+      },
+      "bytes": 41659
+    },
+    "dist/web/chunks/chunk-CQG5MVIV.js": {
+      "imports": [],
+      "exports": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "inputs": {
+        "<define:__HELA_LEGAL__>": {
+          "bytesInOutput": 35633
+        }
+      },
+      "bytes": 36568
+    },
+    "dist/web/main.css": {
+      "imports": [],
+      "inputs": {
+        "web/src/styles.css": {
+          "bytesInOutput": 21816
+        },
+        "web/src/application.css": {
+          "bytesInOutput": 25698
+        },
+        "web/src/teaching.css": {
+          "bytesInOutput": 9759
+        },
+        "web/src/web.css": {
+          "bytesInOutput": 2797
+        },
+        "web/src/vision/photo.css": {
+          "bytesInOutput": 8152
+        }
+      },
+      "bytes": 68223
+    }
+  }
+}
