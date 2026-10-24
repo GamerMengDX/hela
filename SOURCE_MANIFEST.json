@@ -19,7 +19,7 @@
     "SOURCE_MANIFEST.json（本文件自身，由 git 提交记录）"
   ],
   "fileCount": 747,
-  "totalBytes": 67927670,
+  "totalBytes": 67928763,
   "files": {
     ".gitignore": {
       "sha256": "2a8a78fedc5f73624b3bb4e02baf7cfcbbf93d07ec0734e4813c62b1803d7a6a",
@@ -82,8 +82,8 @@
       "bytes": 108786
     },
     "README.md": {
-      "sha256": "2292deefab159291bb31588af692364ccbfc07bb338e4f8387da2d6ce54f4d2f",
-      "bytes": 11777
+      "sha256": "ce2fe1967ae37809e3d0c73e73ed354b5b0724a0031aa53297db536c6e395e25",
+      "bytes": 12075
     },
     "SOURCE_MANIFEST.md": {
       "sha256": "767663a50d3be3f370d7039a3e5d2fe88cf2286a4981c5aa5191616a5e8092cc",
@@ -266,8 +266,8 @@
       "bytes": 8990
     },
     "docs/RELEASE.md": {
-      "sha256": "af107e024aeb390b650f9bf9de65daf618ea8a6befa6ffe14b7eedadf98195d4",
-      "bytes": 7688
+      "sha256": "8a8f06cb309c7cd8454241852631a85c4b816a760e2991eeec7821a9e01fe40a",
+      "bytes": 8483
     },
     "docs/VISION-MODEL.md": {
       "sha256": "21171f84f2e63fc8bffeff3f03c5c755f9eb2c797f0b2127374138d4c296b71f",

@@ -134,3 +134,14 @@ certutil -hashfile hela-<版本>-web.zip SHA256   # Windows
 
 页面帮助中可展开查看本项目原创代码 AGPL 及 majiang-core MIT 完整正文，两种构建均在构建期内嵌；
 下载包另附完整第三方许可（含牌面的 M+ 条款与来源说明）与对应源码说明。
+
+## 八、0.6.2 的公开下载入口
+
+当前发布通道为同一仓库的独立分支 ZIP：`0.6.2-web`、`0.6.2-offline` 和 `0.6.2-source`。
+前两者使用上文构建所得的应用文件；提取本地下载包后仅补充传输说明、`SOURCE.md` 与
+`FILES_SHA256SUMS`，不改应用脚本、样式、图像、模型或许可证正文。源码分支保留对应源码快照，
+应用包内 `SOURCE.md` 同时记录固定源码提交与清单哈希。
+
+GitHub 动态生成分支 ZIP，其压缩字节与本地 `release:prepare` 的 ZIP 不同，所以不沿用本地整包
+SHA256。用户解压后运行 `shasum -a 256 -c FILES_SHA256SUMS` 核对实际文件；源码仍使用
+`SOURCE_MANIFEST.json` 校验。不要将“提供了下载分支”写成“GitHub Release 已发布”。

@@ -19,16 +19,20 @@ vector artwork, used under the upstream M+ font licence — not AGPL, not MIT.
 
 ## 一、下载即用（普通用户）
 
-[下载 v0.6.2](https://github.com/GamerMengDX/hela/releases/tag/v0.6.2)，**不需要安装 Node.js，也不需要联网才能算点**：
+下载 **v0.6.2 已构建版本**，**不需要安装 Node.js，也不需要联网才能算点**：
 
 | 下载 | 打开方式 | 照片识别 |
 | --- | --- | --- |
-| [完整版 ZIP](https://github.com/GamerMengDX/hela/releases/download/v0.6.2/hela-0.6.2-web.zip) | 解压后用**本地静态服务器**打开（见下），或上传到任意静态托管 / GitHub Pages | **有**（本机 WebGL，模型随包约 28 MB） |
-| [离线版 ZIP](https://github.com/GamerMengDX/hela/releases/download/v0.6.2/hela-0.6.2-offline.zip)（内含 `hela-0.6.2.html`） | 解压后**双击**那个 html 文件即可 | **没有**（单文件版不含识别模型与运行库，也没有识别入口） |
+| [完整版 ZIP](https://github.com/GamerMengDX/hela/archive/refs/heads/0.6.2-web.zip) | 解压后用**本地静态服务器**打开（见下），或上传到任意静态托管 / GitHub Pages | **有**（本机 WebGL，模型随包约 28 MB） |
+| [离线版 ZIP](https://github.com/GamerMengDX/hela/archive/refs/heads/0.6.2-offline.zip)（内含 `hela-0.6.2.html`） | 解压后**双击**那个 html 文件即可 | **没有**（单文件版不含识别模型与运行库，也没有识别入口） |
 
-也可直接下载 [单 HTML](https://github.com/GamerMengDX/hela/releases/download/v0.6.2/hela-0.6.2.html)。
-[完整对应源码 ZIP](https://github.com/GamerMengDX/hela/releases/download/v0.6.2/hela-0.6.2-source.zip) ·
-[SHA256 校验清单](https://github.com/GamerMengDX/hela/releases/download/v0.6.2/SHA256SUMS)。
+单 HTML 位于离线版 ZIP 内。
+[完整对应源码 ZIP](https://github.com/GamerMengDX/hela/archive/refs/heads/0.6.2-source.zip)。
+每个网页下载包都附有 `FILES_SHA256SUMS` 文件级校验清单和 `SOURCE.md` 对应源码说明；
+源码包附有 `SOURCE_MANIFEST.json`。
+
+当前通过独立下载分支提供 ZIP：`0.6.2-web` / `0.6.2-offline` 内是已经构建好的应用，
+`0.6.2-source` 保留对应源码。GitHub Releases 页面尚未上架，以上链接可以直接下载。
 
 两种包都包含：算点、43 役图鉴、30 个教学示例、组牌与算点练习、本地四人点棒表、三语、三主题，
 以及完整许可与来源材料（`LICENSE`、`LICENSES/`、`THIRD_PARTY_NOTICES.md`）。
@@ -64,11 +68,14 @@ python3 -m http.server 8080 --bind 127.0.0.1  # Windows 可用：py -m http.serv
 
 ### 校验下载
 
-发布页的 `SHA256SUMS` 覆盖每个下载文件：
+解压网页下载包后，在该目录校验文件内容：
 
 ```bash
-shasum -a 256 -c SHA256SUMS      # macOS / Linux（Windows 可用 certutil -hashfile <文件> SHA256）
+shasum -a 256 -c FILES_SHA256SUMS   # macOS / Linux
 ```
+
+GitHub 按需生成 ZIP，压缩字节可能变化，因此这里校验的是解压后的文件内容。
+构建脚本生成的本地 Release 包仍另附 `SHA256SUMS` 整包校验，见 [发布说明](docs/RELEASE.md)。
 
 ---
 
