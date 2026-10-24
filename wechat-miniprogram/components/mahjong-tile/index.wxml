@@ -1,6 +1,0 @@
-<view class="tile-wrap {{size}}" bindtap="pick">
-  <view class="tile {{selected ? 'selected' : ''}} {{disabled ? 'disabled' : ''}}" bindlongpress="hold" hover-class="{{disabled ? 'none' : 'tile-hover'}}" aria-role="button" aria-label="{{name}}">
-    <image wx:if="{{src}}" class="artwork" src="{{src}}" mode="aspectFit" /><text wx:else class="placeholder">?</text>
-  </view>
-  <view wx:if="{{removable}}" class="remove" catchtap="remove" aria-role="button" aria-label="{{copy.remove}}{{name}}">×</view>
-</view>

@@ -1,8 +1,0 @@
-{
-  "name": "hela-wechat-miniprogram",
-  "version": "0.6.0",
-  "private": true,
-  "type": "commonjs",
-  "description": "和啦 · 原生微信小程序端（与 src/ 共享算点、教学与三语核心）",
-  "license": "AGPL-3.0-only"
-}
